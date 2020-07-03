@@ -77,6 +77,12 @@
     <Compile Include="GestionarProfesional.Designer.cs">
       <DependentUpon>GestionarProfesional.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionarSolicitud.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionarSolicitud.Designer.cs">
+      <DependentUpon>GestionarSolicitud.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionarUsuarios.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionarProfesional.resx">
       <DependentUpon>GestionarProfesional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarSolicitud.resx">
+      <DependentUpon>GestionarSolicitud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionarUsuarios.resx">
       <DependentUpon>GestionarUsuarios.cs</DependentUpon>

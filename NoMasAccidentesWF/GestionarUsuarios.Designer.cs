@@ -136,7 +136,7 @@
             this.tcUsuario.Controls.Add(this.tpAddCli);
             this.tcUsuario.Location = new System.Drawing.Point(0, 0);
             this.tcUsuario.Name = "tcUsuario";
-            this.tcUsuario.SelectedIndex = 3;
+            this.tcUsuario.SelectedIndex = 0;
             this.tcUsuario.Size = new System.Drawing.Size(900, 552);
             this.tcUsuario.TabIndex = 0;
             this.tcUsuario.UseSelectable = true;
@@ -200,7 +200,7 @@
             // dtFecExpiracion
             // 
             this.dtFecExpiracion.Location = new System.Drawing.Point(121, 68);
-            this.dtFecExpiracion.MinimumSize = new System.Drawing.Size(4, 30);
+            this.dtFecExpiracion.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtFecExpiracion.Name = "dtFecExpiracion";
             this.dtFecExpiracion.Size = new System.Drawing.Size(116, 30);
             this.dtFecExpiracion.TabIndex = 88;
@@ -243,11 +243,11 @@
             // cboTipoContrato
             // 
             this.cboTipoContrato.FormattingEnabled = true;
-            this.cboTipoContrato.ItemHeight = 24;
+            this.cboTipoContrato.ItemHeight = 23;
             this.cboTipoContrato.Location = new System.Drawing.Point(121, 29);
             this.cboTipoContrato.Margin = new System.Windows.Forms.Padding(2);
             this.cboTipoContrato.Name = "cboTipoContrato";
-            this.cboTipoContrato.Size = new System.Drawing.Size(116, 30);
+            this.cboTipoContrato.Size = new System.Drawing.Size(116, 29);
             this.cboTipoContrato.TabIndex = 84;
             this.cboTipoContrato.UseSelectable = true;
             // 
@@ -1229,20 +1229,20 @@
             // cboComuna
             // 
             this.cboComuna.FormattingEnabled = true;
-            this.cboComuna.ItemHeight = 24;
+            this.cboComuna.ItemHeight = 23;
             this.cboComuna.Location = new System.Drawing.Point(436, 162);
             this.cboComuna.Name = "cboComuna";
-            this.cboComuna.Size = new System.Drawing.Size(140, 30);
+            this.cboComuna.Size = new System.Drawing.Size(140, 29);
             this.cboComuna.TabIndex = 108;
             this.cboComuna.UseSelectable = true;
             // 
             // cboRegion
             // 
             this.cboRegion.FormattingEnabled = true;
-            this.cboRegion.ItemHeight = 24;
+            this.cboRegion.ItemHeight = 23;
             this.cboRegion.Location = new System.Drawing.Point(436, 127);
             this.cboRegion.Name = "cboRegion";
-            this.cboRegion.Size = new System.Drawing.Size(140, 30);
+            this.cboRegion.Size = new System.Drawing.Size(140, 29);
             this.cboRegion.TabIndex = 107;
             this.cboRegion.UseSelectable = true;
             this.cboRegion.SelectedIndexChanged += new System.EventHandler(this.cboRegion_SelectedIndexChanged);
@@ -1250,10 +1250,10 @@
             // cboPais
             // 
             this.cboPais.FormattingEnabled = true;
-            this.cboPais.ItemHeight = 24;
+            this.cboPais.ItemHeight = 23;
             this.cboPais.Location = new System.Drawing.Point(436, 92);
             this.cboPais.Name = "cboPais";
-            this.cboPais.Size = new System.Drawing.Size(140, 30);
+            this.cboPais.Size = new System.Drawing.Size(140, 29);
             this.cboPais.TabIndex = 106;
             this.cboPais.UseSelectable = true;
             this.cboPais.SelectedIndexChanged += new System.EventHandler(this.cboPais_SelectedIndexChanged);

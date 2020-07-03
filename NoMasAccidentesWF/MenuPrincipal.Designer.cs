@@ -57,6 +57,7 @@
             this.btnAgregarProfesional = new MetroFramework.Controls.MetroButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.PanelDePestañas = new MetroFramework.Controls.MetroPanel();
+            this.btnGestionarSolicitud = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -140,7 +141,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +153,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(3, 169);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(61, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,7 +164,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(3, 336);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(61, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +175,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(3, 505);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(61, 45);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -184,6 +185,7 @@
             // menuLateral
             // 
             this.menuLateral.BackColor = System.Drawing.Color.Transparent;
+            this.menuLateral.Controls.Add(this.btnGestionarSolicitud);
             this.menuLateral.Controls.Add(this.PanelSubMenuGestionarContratos);
             this.menuLateral.Controls.Add(this.pictureBox4);
             this.menuLateral.Controls.Add(this.PanelSubMenuGestionarUsuario);
@@ -201,7 +203,7 @@
             this.menuLateral.HorizontalScrollbarHighlightOnWheel = false;
             this.menuLateral.HorizontalScrollbarSize = 8;
             this.menuLateral.Location = new System.Drawing.Point(-1, 2);
-            this.menuLateral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuLateral.Margin = new System.Windows.Forms.Padding(2);
             this.menuLateral.Name = "menuLateral";
             this.menuLateral.Size = new System.Drawing.Size(240, 685);
             this.menuLateral.Style = MetroFramework.MetroColorStyle.Black;
@@ -220,7 +222,7 @@
             this.PanelSubMenuGestionarContratos.HorizontalScrollbarHighlightOnWheel = false;
             this.PanelSubMenuGestionarContratos.HorizontalScrollbarSize = 8;
             this.PanelSubMenuGestionarContratos.Location = new System.Drawing.Point(1, 545);
-            this.PanelSubMenuGestionarContratos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelSubMenuGestionarContratos.Margin = new System.Windows.Forms.Padding(2);
             this.PanelSubMenuGestionarContratos.Name = "PanelSubMenuGestionarContratos";
             this.PanelSubMenuGestionarContratos.Size = new System.Drawing.Size(241, 85);
             this.PanelSubMenuGestionarContratos.TabIndex = 15;
@@ -267,7 +269,7 @@
             this.PanelSubMenuGestionarUsuario.HorizontalScrollbarHighlightOnWheel = false;
             this.PanelSubMenuGestionarUsuario.HorizontalScrollbarSize = 8;
             this.PanelSubMenuGestionarUsuario.Location = new System.Drawing.Point(3, 211);
-            this.PanelSubMenuGestionarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelSubMenuGestionarUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.PanelSubMenuGestionarUsuario.Name = "PanelSubMenuGestionarUsuario";
             this.PanelSubMenuGestionarUsuario.Size = new System.Drawing.Size(237, 122);
             this.PanelSubMenuGestionarUsuario.TabIndex = 11;
@@ -327,7 +329,7 @@
             this.PanelSubMenuGestionarClientes.HorizontalScrollbarHighlightOnWheel = false;
             this.PanelSubMenuGestionarClientes.HorizontalScrollbarSize = 8;
             this.PanelSubMenuGestionarClientes.Location = new System.Drawing.Point(6, 381);
-            this.PanelSubMenuGestionarClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelSubMenuGestionarClientes.Margin = new System.Windows.Forms.Padding(2);
             this.PanelSubMenuGestionarClientes.Name = "PanelSubMenuGestionarClientes";
             this.PanelSubMenuGestionarClientes.Size = new System.Drawing.Size(235, 128);
             this.PanelSubMenuGestionarClientes.TabIndex = 12;
@@ -388,7 +390,7 @@
             this.panelSubMenuProfesional.HorizontalScrollbarHighlightOnWheel = false;
             this.panelSubMenuProfesional.HorizontalScrollbarSize = 8;
             this.panelSubMenuProfesional.Location = new System.Drawing.Point(3, 41);
-            this.panelSubMenuProfesional.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelSubMenuProfesional.Margin = new System.Windows.Forms.Padding(2);
             this.panelSubMenuProfesional.Name = "panelSubMenuProfesional";
             this.panelSubMenuProfesional.Size = new System.Drawing.Size(237, 132);
             this.panelSubMenuProfesional.TabIndex = 10;
@@ -404,7 +406,7 @@
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 8;
             this.metroPanel1.Location = new System.Drawing.Point(3, 136);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(234, 103);
             this.metroPanel1.TabIndex = 11;
@@ -459,7 +461,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(385, 51);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(585, 72);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -476,7 +478,7 @@
             this.PanelDePestañas.HorizontalScrollbarHighlightOnWheel = false;
             this.PanelDePestañas.HorizontalScrollbarSize = 8;
             this.PanelDePestañas.Location = new System.Drawing.Point(277, 110);
-            this.PanelDePestañas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelDePestañas.Margin = new System.Windows.Forms.Padding(2);
             this.PanelDePestañas.Name = "PanelDePestañas";
             this.PanelDePestañas.Size = new System.Drawing.Size(900, 548);
             this.PanelDePestañas.TabIndex = 15;
@@ -484,6 +486,20 @@
             this.PanelDePestañas.VerticalScrollbarBarColor = true;
             this.PanelDePestañas.VerticalScrollbarHighlightOnWheel = false;
             this.PanelDePestañas.VerticalScrollbarSize = 8;
+            // 
+            // btnGestionarSolicitud
+            // 
+            this.btnGestionarSolicitud.BackColor = System.Drawing.Color.Transparent;
+            this.btnGestionarSolicitud.Location = new System.Drawing.Point(65, 633);
+            this.btnGestionarSolicitud.Name = "btnGestionarSolicitud";
+            this.btnGestionarSolicitud.Size = new System.Drawing.Size(176, 45);
+            this.btnGestionarSolicitud.Style = MetroFramework.MetroColorStyle.Black;
+            this.btnGestionarSolicitud.TabIndex = 16;
+            this.btnGestionarSolicitud.Text = "Gestionar Solicitud";
+            this.btnGestionarSolicitud.UseCustomBackColor = true;
+            this.btnGestionarSolicitud.UseSelectable = true;
+            this.btnGestionarSolicitud.UseStyleColors = true;
+            this.btnGestionarSolicitud.Click += new System.EventHandler(this.btnGestionarSolicitud_Click);
             // 
             // MenuPrincipal
             // 
@@ -497,7 +513,7 @@
             this.Controls.Add(this.menuLateral);
             this.Controls.Add(this.btnSalir);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "MenuPrincipal";
             this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
@@ -548,5 +564,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private MetroFramework.Controls.MetroPanel PanelDePestañas;
         private MetroFramework.Controls.MetroButton btnDetPago;
+        private MetroFramework.Controls.MetroButton btnGestionarSolicitud;
     }
 }

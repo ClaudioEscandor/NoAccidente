@@ -18,6 +18,7 @@ namespace NoMasAccidentesWF
         GestionarProfesional GP = new GestionarProfesional();
         GestionarUsuarios GU = new GestionarUsuarios();
         GestionarContratos GContra = new GestionarContratos();
+        GestionarSolicitud GS = new GestionarSolicitud();
 
         public MenuPrincipal()
         {
@@ -212,6 +213,15 @@ namespace NoMasAccidentesWF
         {
             GC.tcGestionCli.SelectedTab = GC.tpDetPago;
             OcultarMenu();
+        }
+
+        private void btnGestionarSolicitud_Click(object sender, EventArgs e)
+        {
+            GS.tcSolicitud.SelectedTab = GS.tpAñadirSolis;
+            PanelDePestañas.Controls.Clear();
+            PanelDePestañas.Controls.Add(GS);
+            GS.Show();
+
         }
     }
 }

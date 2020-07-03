@@ -62,6 +62,7 @@
     <Compile Include="Controlador\CapacitacionControlador.cs" />
     <Compile Include="Controlador\ClienteControlador.cs" />
     <Compile Include="Controlador\ContratoControlador.cs" />
+    <Compile Include="Controlador\SolicitudControlador.cs" />
     <Compile Include="Controlador\LoginControlador.cs" />
     <Compile Include="Controlador\PlanificacionCapacitacionControlador.cs" />
     <Compile Include="Controlador\ProfesionalControlador.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Modelo\Profesional.cs" />
     <Compile Include="Modelo\Reporte.cs" />
     <Compile Include="Modelo\Servicio.cs" />
+    <Compile Include="Modelo\Solicitud.cs" />
     <Compile Include="Modelo\TipoEvento.cs" />
     <Compile Include="Modelo\TipoUsuario.cs" />
     <Compile Include="Modelo\Ubicacion.cs" />

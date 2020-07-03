@@ -41,7 +41,6 @@ namespace NoMasAccidentesWF
             //Cliente
             cargarCboPais();
             cargarCboTipoContrato();
-
         }
 
         private void cargarCboComuna(int idRegion)
@@ -782,6 +781,7 @@ namespace NoMasAccidentesWF
 
             }
 
+
             MessageBox.Show("Se Completo el proceso Correctamente", "Finalizado");
         }
 
@@ -805,6 +805,11 @@ namespace NoMasAccidentesWF
             {
                 cargarCboComuna(id_region);
             }
+        }
+
+        private void grdProfesionales_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
