@@ -339,7 +339,7 @@ namespace NoMasAccidentesWF
                 }
             }
         }
-
+        //Mostrar contraseña en el modificar profesional al seleccionarlo en la data grid
         private void cbMostrarContraProfesional_CheckedChanged(object sender, EventArgs e)
         {
             if (cbMostrarContraProfesional.Checked == true)
