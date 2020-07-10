@@ -38,7 +38,7 @@ namespace NoMasAccidentesWF
         private void btnAñadirSolicitud_Click(object sender, EventArgs e)
         {
             sc.agregarSolicitud(idSolicitud, idProfesional);
-            MessageBox.Show("Solicitud agregada correctamente");
+            MessageBox.Show("Solicitud agregada correctamente", "Correcto");
         }
 
         private void grdSolicitud_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -61,6 +61,11 @@ namespace NoMasAccidentesWF
         {
             cargarSolicitud();
             cargarProfesionales();
+        }
+
+        private void metroLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
