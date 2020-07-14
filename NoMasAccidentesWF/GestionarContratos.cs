@@ -35,8 +35,8 @@ namespace NoMasAccidentesWF
 
         private void cargarGrdContrato()
         {
-            grdEditContrato.DataSource = contratoControlador.listarContratos();
-            grdLstContratos.DataSource = contratoControlador.listarContratos();
+           // grdEditContrato.DataSource = contratoControlador.listarContratos();
+            //grdLstContratos.DataSource = contratoControlador.listarContratos();
         }
 
 
@@ -47,7 +47,7 @@ namespace NoMasAccidentesWF
             string detContrato = txtDetContrEdit.Text;
             DateTime fecExpiracion = dpFecExpiracion.Value;
 
-            contratoControlador.actualizarContrato(idContrato, fecExpiracion, detContrato, tipoContrato);
+           // contratoControlador.actualizarContrato(idContrato, fecExpiracion, detContrato, tipoContrato);
             List<int> lst_tipo_servicios = new List<int>();
             if (chkSeguridad.Checked)
             {

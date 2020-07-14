@@ -32,19 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tcUsuario = new MetroFramework.Controls.MetroTabControl();
-            this.tpAddContrato = new MetroFramework.Controls.MetroTabPage();
-            this.chkMantencion = new MetroFramework.Controls.MetroCheckBox();
-            this.chkSeguridad = new MetroFramework.Controls.MetroCheckBox();
-            this.chkAsesoria = new MetroFramework.Controls.MetroCheckBox();
-            this.dtFecExpiracion = new MetroFramework.Controls.MetroDateTime();
-            this.btnAddContrato = new MetroFramework.Controls.MetroButton();
-            this.metroLabel39 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel46 = new MetroFramework.Controls.MetroLabel();
-            this.cboTipoContrato = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel47 = new MetroFramework.Controls.MetroLabel();
-            this.txtDetContrato = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel48 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel49 = new MetroFramework.Controls.MetroLabel();
             this.tpAñadirUsuario = new MetroFramework.Controls.MetroTabPage();
             this.btnAgregarUsuario = new MetroFramework.Controls.MetroButton();
             this.cboTipoUsu = new MetroFramework.Controls.MetroComboBox();
@@ -117,7 +104,6 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tcUsuario.SuspendLayout();
-            this.tpAddContrato.SuspendLayout();
             this.tpAñadirUsuario.SuspendLayout();
             this.tpEditarUsuario.SuspendLayout();
             this.tpListarUsuario.SuspendLayout();
@@ -128,7 +114,6 @@
             // 
             // tcUsuario
             // 
-            this.tcUsuario.Controls.Add(this.tpAddContrato);
             this.tcUsuario.Controls.Add(this.tpAñadirUsuario);
             this.tcUsuario.Controls.Add(this.tpEditarUsuario);
             this.tcUsuario.Controls.Add(this.tpListarUsuario);
@@ -140,178 +125,6 @@
             this.tcUsuario.Size = new System.Drawing.Size(900, 552);
             this.tcUsuario.TabIndex = 0;
             this.tcUsuario.UseSelectable = true;
-            // 
-            // tpAddContrato
-            // 
-            this.tpAddContrato.Controls.Add(this.chkMantencion);
-            this.tpAddContrato.Controls.Add(this.chkSeguridad);
-            this.tpAddContrato.Controls.Add(this.chkAsesoria);
-            this.tpAddContrato.Controls.Add(this.dtFecExpiracion);
-            this.tpAddContrato.Controls.Add(this.btnAddContrato);
-            this.tpAddContrato.Controls.Add(this.metroLabel39);
-            this.tpAddContrato.Controls.Add(this.metroLabel46);
-            this.tpAddContrato.Controls.Add(this.cboTipoContrato);
-            this.tpAddContrato.Controls.Add(this.metroLabel47);
-            this.tpAddContrato.Controls.Add(this.txtDetContrato);
-            this.tpAddContrato.Controls.Add(this.metroLabel48);
-            this.tpAddContrato.Controls.Add(this.metroLabel49);
-            this.tpAddContrato.HorizontalScrollbarBarColor = true;
-            this.tpAddContrato.HorizontalScrollbarHighlightOnWheel = false;
-            this.tpAddContrato.HorizontalScrollbarSize = 10;
-            this.tpAddContrato.Location = new System.Drawing.Point(4, 38);
-            this.tpAddContrato.Name = "tpAddContrato";
-            this.tpAddContrato.Size = new System.Drawing.Size(892, 510);
-            this.tpAddContrato.TabIndex = 5;
-            this.tpAddContrato.Text = "Añadir Contrato Cliente";
-            this.tpAddContrato.VerticalScrollbarBarColor = true;
-            this.tpAddContrato.VerticalScrollbarHighlightOnWheel = false;
-            this.tpAddContrato.VerticalScrollbarSize = 10;
-            // 
-            // chkMantencion
-            // 
-            this.chkMantencion.AutoSize = true;
-            this.chkMantencion.Location = new System.Drawing.Point(121, 150);
-            this.chkMantencion.Name = "chkMantencion";
-            this.chkMantencion.Size = new System.Drawing.Size(87, 15);
-            this.chkMantencion.TabIndex = 91;
-            this.chkMantencion.Text = "Mantención";
-            this.chkMantencion.UseSelectable = true;
-            // 
-            // chkSeguridad
-            // 
-            this.chkSeguridad.AutoSize = true;
-            this.chkSeguridad.Location = new System.Drawing.Point(121, 130);
-            this.chkSeguridad.Name = "chkSeguridad";
-            this.chkSeguridad.Size = new System.Drawing.Size(76, 15);
-            this.chkSeguridad.TabIndex = 90;
-            this.chkSeguridad.Text = "Seguridad";
-            this.chkSeguridad.UseSelectable = true;
-            // 
-            // chkAsesoria
-            // 
-            this.chkAsesoria.AutoSize = true;
-            this.chkAsesoria.Location = new System.Drawing.Point(121, 108);
-            this.chkAsesoria.Name = "chkAsesoria";
-            this.chkAsesoria.Size = new System.Drawing.Size(72, 15);
-            this.chkAsesoria.TabIndex = 89;
-            this.chkAsesoria.Text = "Asesorias";
-            this.chkAsesoria.UseSelectable = true;
-            // 
-            // dtFecExpiracion
-            // 
-            this.dtFecExpiracion.Location = new System.Drawing.Point(121, 68);
-            this.dtFecExpiracion.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dtFecExpiracion.Name = "dtFecExpiracion";
-            this.dtFecExpiracion.Size = new System.Drawing.Size(116, 30);
-            this.dtFecExpiracion.TabIndex = 88;
-            // 
-            // btnAddContrato
-            // 
-            this.btnAddContrato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAddContrato.Location = new System.Drawing.Point(258, 340);
-            this.btnAddContrato.Name = "btnAddContrato";
-            this.btnAddContrato.Size = new System.Drawing.Size(128, 27);
-            this.btnAddContrato.Style = MetroFramework.MetroColorStyle.White;
-            this.btnAddContrato.TabIndex = 87;
-            this.btnAddContrato.Text = "Añadir Contrato";
-            this.btnAddContrato.UseCustomBackColor = true;
-            this.btnAddContrato.UseSelectable = true;
-            this.btnAddContrato.UseStyleColors = true;
-            this.btnAddContrato.Click += new System.EventHandler(this.btnAddContrato_Click);
-            // 
-            // metroLabel39
-            // 
-            this.metroLabel39.AutoSize = true;
-            this.metroLabel39.Location = new System.Drawing.Point(4, 104);
-            this.metroLabel39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.metroLabel39.Name = "metroLabel39";
-            this.metroLabel39.Size = new System.Drawing.Size(85, 19);
-            this.metroLabel39.TabIndex = 86;
-            this.metroLabel39.Text = "Tipo Servicio";
-            // 
-            // metroLabel46
-            // 
-            this.metroLabel46.AutoSize = true;
-            this.metroLabel46.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel46.Location = new System.Drawing.Point(4, 2);
-            this.metroLabel46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.metroLabel46.Name = "metroLabel46";
-            this.metroLabel46.Size = new System.Drawing.Size(137, 25);
-            this.metroLabel46.TabIndex = 85;
-            this.metroLabel46.Text = "Añadir Contrato:";
-            // 
-            // cboTipoContrato
-            // 
-            this.cboTipoContrato.FormattingEnabled = true;
-            this.cboTipoContrato.ItemHeight = 23;
-            this.cboTipoContrato.Location = new System.Drawing.Point(121, 29);
-            this.cboTipoContrato.Margin = new System.Windows.Forms.Padding(2);
-            this.cboTipoContrato.Name = "cboTipoContrato";
-            this.cboTipoContrato.Size = new System.Drawing.Size(116, 29);
-            this.cboTipoContrato.TabIndex = 84;
-            this.cboTipoContrato.UseSelectable = true;
-            // 
-            // metroLabel47
-            // 
-            this.metroLabel47.AutoSize = true;
-            this.metroLabel47.Location = new System.Drawing.Point(4, 29);
-            this.metroLabel47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.metroLabel47.Name = "metroLabel47";
-            this.metroLabel47.Size = new System.Drawing.Size(91, 19);
-            this.metroLabel47.TabIndex = 83;
-            this.metroLabel47.Text = "Tipo Contrato";
-            // 
-            // txtDetContrato
-            // 
-            // 
-            // 
-            // 
-            this.txtDetContrato.CustomButton.Image = null;
-            this.txtDetContrato.CustomButton.Location = new System.Drawing.Point(113, 2);
-            this.txtDetContrato.CustomButton.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDetContrato.CustomButton.Name = "";
-            this.txtDetContrato.CustomButton.Size = new System.Drawing.Size(117, 117);
-            this.txtDetContrato.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtDetContrato.CustomButton.TabIndex = 1;
-            this.txtDetContrato.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtDetContrato.CustomButton.UseSelectable = true;
-            this.txtDetContrato.CustomButton.Visible = false;
-            this.txtDetContrato.Lines = new string[0];
-            this.txtDetContrato.Location = new System.Drawing.Point(4, 205);
-            this.txtDetContrato.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDetContrato.MaxLength = 32767;
-            this.txtDetContrato.Name = "txtDetContrato";
-            this.txtDetContrato.PasswordChar = '\0';
-            this.txtDetContrato.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDetContrato.SelectedText = "";
-            this.txtDetContrato.SelectionLength = 0;
-            this.txtDetContrato.SelectionStart = 0;
-            this.txtDetContrato.ShortcutsEnabled = true;
-            this.txtDetContrato.Size = new System.Drawing.Size(233, 122);
-            this.txtDetContrato.TabIndex = 82;
-            this.txtDetContrato.UseSelectable = true;
-            this.txtDetContrato.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtDetContrato.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel48
-            // 
-            this.metroLabel48.AutoSize = true;
-            this.metroLabel48.Location = new System.Drawing.Point(4, 70);
-            this.metroLabel48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.metroLabel48.Name = "metroLabel48";
-            this.metroLabel48.Size = new System.Drawing.Size(107, 19);
-            this.metroLabel48.TabIndex = 81;
-            this.metroLabel48.Text = "Fecha Expiracion";
-            // 
-            // metroLabel49
-            // 
-            this.metroLabel49.AutoSize = true;
-            this.metroLabel49.Location = new System.Drawing.Point(6, 184);
-            this.metroLabel49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.metroLabel49.Name = "metroLabel49";
-            this.metroLabel49.Size = new System.Drawing.Size(105, 19);
-            this.metroLabel49.TabIndex = 80;
-            this.metroLabel49.Text = "Detalle Contrato";
             // 
             // tpAñadirUsuario
             // 
@@ -355,10 +168,10 @@
             // cboTipoUsu
             // 
             this.cboTipoUsu.FormattingEnabled = true;
-            this.cboTipoUsu.ItemHeight = 24;
+            this.cboTipoUsu.ItemHeight = 23;
             this.cboTipoUsu.Location = new System.Drawing.Point(97, 141);
             this.cboTipoUsu.Name = "cboTipoUsu";
-            this.cboTipoUsu.Size = new System.Drawing.Size(139, 30);
+            this.cboTipoUsu.Size = new System.Drawing.Size(139, 29);
             this.cboTipoUsu.TabIndex = 10;
             this.cboTipoUsu.UseSelectable = true;
             // 
@@ -1641,7 +1454,7 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(0, 0);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(900, 47);
+            this.metroPanel1.Size = new System.Drawing.Size(900, 49);
             this.metroPanel1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroPanel1.TabIndex = 5;
             this.metroPanel1.UseCustomBackColor = true;
@@ -1660,8 +1473,6 @@
             this.Padding = new System.Windows.Forms.Padding(20, 60, 20, 20);
             this.Size = new System.Drawing.Size(900, 587);
             this.tcUsuario.ResumeLayout(false);
-            this.tpAddContrato.ResumeLayout(false);
-            this.tpAddContrato.PerformLayout();
             this.tpAñadirUsuario.ResumeLayout(false);
             this.tpAñadirUsuario.PerformLayout();
             this.tpEditarUsuario.ResumeLayout(false);
@@ -1716,7 +1527,6 @@
         private MetroFramework.Controls.MetroLabel lblPnombre;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroButton btnAñadirProfesional;
-        private MetroFramework.Controls.MetroTabPage tpAddContrato;
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroTextBox txtNomContacto;
         private MetroFramework.Controls.MetroLabel metroLabel54;
@@ -1744,18 +1554,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel27;
         private MetroFramework.Controls.MetroLabel metroLabel28;
         private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroCheckBox chkMantencion;
-        private MetroFramework.Controls.MetroCheckBox chkSeguridad;
-        private MetroFramework.Controls.MetroCheckBox chkAsesoria;
-        private MetroFramework.Controls.MetroDateTime dtFecExpiracion;
-        private MetroFramework.Controls.MetroButton btnAddContrato;
-        private MetroFramework.Controls.MetroLabel metroLabel39;
-        private MetroFramework.Controls.MetroLabel metroLabel46;
-        private MetroFramework.Controls.MetroComboBox cboTipoContrato;
-        private MetroFramework.Controls.MetroLabel metroLabel47;
-        private MetroFramework.Controls.MetroTextBox txtDetContrato;
-        private MetroFramework.Controls.MetroLabel metroLabel48;
-        private MetroFramework.Controls.MetroLabel metroLabel49;
         private MetroFramework.Controls.MetroButton btnAñadirCliente;
         public MetroFramework.Controls.MetroTabControl tcUsuario;
         public MetroFramework.Controls.MetroTabPage tpAñadirUsuario;

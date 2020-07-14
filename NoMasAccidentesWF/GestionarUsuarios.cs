@@ -40,7 +40,6 @@ namespace NoMasAccidentesWF
 
             //Cliente
             cargarCboPais();
-            cargarCboTipoContrato();
         }
 
         private void cargarCboComuna(int idRegion)
@@ -90,22 +89,6 @@ namespace NoMasAccidentesWF
                 cboPais.ValueMember = "id";
                 operaciones.cerrarConexion();
 
-            }
-        }
-
-        private void cargarCboTipoContrato()
-        {
-            using (OracleDataReader dr = operaciones.sqlOperacion("SELECT ID_TIPO_CONTRATO,NOMBRE_TIPO FROM TIPO_CONTRATO"))
-            {
-                while (dr.Read())
-                {
-                    cboTipoContrato.Items.Add(new { id = dr["ID_TIPO_CONTRATO"].ToString(), desc = dr["NOMBRE_TIPO"].ToString() });
-                    //cboTipoContrato.Items.Add(dr["NOMBRE_TIPO"].ToString());
-                }
-
-                cboTipoContrato.DisplayMember = "desc";
-                cboTipoContrato.ValueMember = "id";
-                operaciones.cerrarConexion();
             }
         }
 
@@ -428,10 +411,7 @@ namespace NoMasAccidentesWF
             txtFono.Text = "";
         }
 
-        private void btnAñadirCliente_Click(object sender, EventArgs e)
-        {
-            tcUsuario.SelectedTab = tpAddContrato;  
-        }
+        
 
         public void agregarCliente()
         {
@@ -685,7 +665,15 @@ namespace NoMasAccidentesWF
                 error.SetError(txtNomContacto, "");
             }
 
-            tcUsuario.SelectedTab = tpAddContrato;
+            int id = guardarCliente();
+            if (id > 0)
+            {
+                MessageBox.Show("Se agrego correctamente");
+
+            }else
+            {
+                MessageBox.Show("No se puedo Agregar");
+            }
         }
 
         //Formulario para guardar los datos del cliente
@@ -713,76 +701,6 @@ namespace NoMasAccidentesWF
 
             //MessageBox.Show("Cliente Agregado");
             return id_cliente;
-        }
-
-        //formulario de contrato para guardar los datos del contrato
-        private void btnAddContrato_Click(object sender, EventArgs e)
-        {
-            var tipo_contrato = cboTipoContrato.SelectedItem as object;
-            int id_tipo_contrato = int.Parse(tipo_contrato.GetType().GetProperty("id").GetValue(tipo_contrato, null).ToString());
-            //var tipo_servicio = cboTipoServicio.SelectedItem as object;
-            //int id_tipo_servicio = int.Parse(tipo_servicio.GetType().GetProperty("id").GetValue(tipo_servicio, null).ToString());
-
-            DateTime fecExpiracion = dtFecExpiracion.Value;
-
-            string det_contrato = txtDetContrato.Text;
-
-            Regex rgLetras = new Regex(@"^[a-zA-Z]{3,10}$");
-
-            if (txtDetContrato.Text == "")
-            {
-                txtDetContrato.WithError = true;
-                error.SetError(txtDetContrato, "Debe ingresar un detalle del contrato");
-                return;
-            }
-            else
-            {
-                txtDetContrato.WithError = false;
-                error.SetError(txtDetContrato, "");
-            }
-            int idCliente = guardarCliente();
-
-            int idContrato = contControlador.insertarContrato(fecExpiracion, det_contrato, id_tipo_contrato);
-
-           // MessageBox.Show("Contrato Creado");
-
-            List<int> lst_tipo_servicios = new List<int>();
-            if (chkSeguridad.Checked)
-            {
-                lst_tipo_servicios.Add(1);
-            }
-            if (chkAsesoria.Checked)
-            {
-                lst_tipo_servicios.Add(2);
-            }
-            if (chkMantencion.Checked)
-            {
-                lst_tipo_servicios.Add(3);
-            }
-
-            List<int> id_servicios = new List<int>();
-            foreach (int serv in lst_tipo_servicios)
-            {
-                string tp_serv = "";
-                switch (serv)
-                {
-                    case 1:
-                        tp_serv = "Seguridad";
-                        break;
-                    case 2:
-                        tp_serv = "Asesoria";
-                        break;
-                    case 3:
-                        tp_serv = "Mantencion";
-                        break;
-                }
-                int idServicio = servControlador.insertarServicio(tp_serv, fecExpiracion, serv, idContrato);
-                servControlador.insertar_detalle_servicio(idCliente, idServicio);
-
-            }
-
-
-            MessageBox.Show("Se Completo el proceso Correctamente", "Finalizado");
         }
 
         //recoge de la bd un pais y se muestra mediante un combobox
