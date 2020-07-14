@@ -186,12 +186,7 @@ namespace NoMasAccidentesWF
             GContra.Show();
         }
 
-        private void btnModificarContratos_Click(object sender, EventArgs e)
-        {
-            //Codigo del boton
-            GContra.tcContratos.SelectedTab = GContra.tpEditarContrato;
-            OcultarMenu();
-        }
+        
 
         private void btnListarContratos_Click(object sender, EventArgs e)
         {
