@@ -61,7 +61,7 @@ namespace Capa_DAL.Controlador
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return 0;
             }
             finally
             {
@@ -109,36 +109,32 @@ namespace Capa_DAL.Controlador
             }
         }
 
-        public List<Usuario> buscarUsuario(string param)
+        public Usuario buscarUsuario(string param)
         {
-
-            List<Usuario> list;
+            
             OracleDataReader dr;
             try
             {
                 operaciones.abrirConexion();
-                list = new List<Usuario>();
                 object[] parametro = new object[2];
                 parametro[0] = param;
                 parametro[1] = "USUARIO";
                 OracleCommand cmd = operaciones.execSP("BUSCAR_USUARIO", parametro);
                 dr = cmd.ExecuteReader();
+                Usuario item = new Usuario();
                 if (dr.HasRows)
                 {
                     while (dr.Read())
                     {
-                        Usuario item = new Usuario();
-
                         item.idUsuario = int.Parse(dr["ID_USUARIO"].ToString());
                         item.email = dr["EMAIL"].ToString();
                         item.password = dr["PASSWORD"].ToString();
                         item.tipo_usuario = dr["TIPO_USUARIO"].ToString();
                         item.estado = dr["ESTADO"].ToString();
-                        list.Add(item);
                     }
                 }
                 dr.Dispose();
-                return list;
+                return item;
             }
             catch (Exception ex)
             {

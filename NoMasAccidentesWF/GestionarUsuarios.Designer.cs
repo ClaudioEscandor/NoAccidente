@@ -489,7 +489,6 @@
             this.btnBuscarEmailUsu.UseCustomForeColor = true;
             this.btnBuscarEmailUsu.UseSelectable = true;
             this.btnBuscarEmailUsu.UseStyleColors = true;
-            this.btnBuscarEmailUsu.Click += new System.EventHandler(this.btnBuscarEmailUsu_Click);
             // 
             // txtBuscarEmail
             // 
