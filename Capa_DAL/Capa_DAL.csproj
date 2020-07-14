@@ -62,6 +62,7 @@
     <Compile Include="Controlador\CapacitacionControlador.cs" />
     <Compile Include="Controlador\ClienteControlador.cs" />
     <Compile Include="Controlador\ContratoControlador.cs" />
+    <Compile Include="Controlador\ReporteControlador.cs" />
     <Compile Include="Controlador\SolicitudControlador.cs" />
     <Compile Include="Controlador\LoginControlador.cs" />
     <Compile Include="Controlador\PlanificacionCapacitacionControlador.cs" />

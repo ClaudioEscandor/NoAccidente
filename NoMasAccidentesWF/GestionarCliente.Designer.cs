@@ -48,6 +48,7 @@
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.tpEditarCli = new MetroFramework.Controls.MetroTabPage();
+            this.btnRecargarCliente = new MetroFramework.Controls.MetroButton();
             this.grdEditCli = new MetroFramework.Controls.MetroGrid();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.txtPass = new MetroFramework.Controls.MetroTextBox();
@@ -74,7 +75,6 @@
             this.tpLstCliente = new MetroFramework.Controls.MetroTabPage();
             this.grdLstClientes = new MetroFramework.Controls.MetroGrid();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.btnRecargarCliente = new MetroFramework.Controls.MetroButton();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tcGestionCli.SuspendLayout();
             this.tpDetPago.SuspendLayout();
@@ -115,7 +115,7 @@
             this.tpDetPago.HorizontalScrollbarHighlightOnWheel = false;
             this.tpDetPago.HorizontalScrollbarSize = 12;
             this.tpDetPago.Location = new System.Drawing.Point(4, 38);
-            this.tpDetPago.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpDetPago.Margin = new System.Windows.Forms.Padding(4);
             this.tpDetPago.Name = "tpDetPago";
             this.tpDetPago.Size = new System.Drawing.Size(1192, 471);
             this.tpDetPago.Style = MetroFramework.MetroColorStyle.Silver;
@@ -166,7 +166,7 @@
             this.metroGrid2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid2.Location = new System.Drawing.Point(4, 66);
-            this.metroGrid2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroGrid2.Margin = new System.Windows.Forms.Padding(4);
             this.metroGrid2.Name = "metroGrid2";
             this.metroGrid2.ReadOnly = true;
             this.metroGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -202,10 +202,10 @@
             // 
             // 
             this.metroTextBox4.CustomButton.Image = null;
-            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(156, 2);
-            this.metroTextBox4.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(117, 2);
+            this.metroTextBox4.CustomButton.Margin = new System.Windows.Forms.Padding(5);
             this.metroTextBox4.CustomButton.Name = "";
-            this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.metroTextBox4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox4.CustomButton.TabIndex = 1;
             this.metroTextBox4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -213,7 +213,7 @@
             this.metroTextBox4.CustomButton.Visible = false;
             this.metroTextBox4.Lines = new string[0];
             this.metroTextBox4.Location = new System.Drawing.Point(669, 18);
-            this.metroTextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBox4.MaxLength = 32767;
             this.metroTextBox4.Name = "metroTextBox4";
             this.metroTextBox4.PasswordChar = '\0';
@@ -236,10 +236,10 @@
             // 
             // 
             this.metroTextBox3.CustomButton.Image = null;
-            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(156, 2);
-            this.metroTextBox3.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(117, 2);
+            this.metroTextBox3.CustomButton.Margin = new System.Windows.Forms.Padding(5);
             this.metroTextBox3.CustomButton.Name = "";
-            this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.metroTextBox3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox3.CustomButton.TabIndex = 1;
             this.metroTextBox3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -247,7 +247,7 @@
             this.metroTextBox3.CustomButton.Visible = false;
             this.metroTextBox3.Lines = new string[0];
             this.metroTextBox3.Location = new System.Drawing.Point(408, 18);
-            this.metroTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBox3.MaxLength = 32767;
             this.metroTextBox3.Name = "metroTextBox3";
             this.metroTextBox3.PasswordChar = '\0';
@@ -314,7 +314,7 @@
             this.tpEditarCli.HorizontalScrollbarHighlightOnWheel = false;
             this.tpEditarCli.HorizontalScrollbarSize = 12;
             this.tpEditarCli.Location = new System.Drawing.Point(4, 38);
-            this.tpEditarCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpEditarCli.Margin = new System.Windows.Forms.Padding(4);
             this.tpEditarCli.Name = "tpEditarCli";
             this.tpEditarCli.Size = new System.Drawing.Size(1192, 471);
             this.tpEditarCli.TabIndex = 3;
@@ -322,6 +322,22 @@
             this.tpEditarCli.VerticalScrollbarBarColor = true;
             this.tpEditarCli.VerticalScrollbarHighlightOnWheel = false;
             this.tpEditarCli.VerticalScrollbarSize = 11;
+            // 
+            // btnRecargarCliente
+            // 
+            this.btnRecargarCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnRecargarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnRecargarCliente.Location = new System.Drawing.Point(477, 422);
+            this.btnRecargarCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRecargarCliente.Name = "btnRecargarCliente";
+            this.btnRecargarCliente.Size = new System.Drawing.Size(184, 33);
+            this.btnRecargarCliente.Style = MetroFramework.MetroColorStyle.White;
+            this.btnRecargarCliente.TabIndex = 33;
+            this.btnRecargarCliente.Text = "Recargar Listado";
+            this.btnRecargarCliente.UseCustomBackColor = true;
+            this.btnRecargarCliente.UseSelectable = true;
+            this.btnRecargarCliente.UseStyleColors = true;
+            this.btnRecargarCliente.Click += new System.EventHandler(this.btnRecargarCliente_Click);
             // 
             // grdEditCli
             // 
@@ -353,7 +369,7 @@
             this.grdEditCli.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdEditCli.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grdEditCli.Location = new System.Drawing.Point(372, 76);
-            this.grdEditCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdEditCli.Margin = new System.Windows.Forms.Padding(4);
             this.grdEditCli.Name = "grdEditCli";
             this.grdEditCli.ReadOnly = true;
             this.grdEditCli.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -386,10 +402,10 @@
             // 
             // 
             this.txtPass.CustomButton.Image = null;
-            this.txtPass.CustomButton.Location = new System.Drawing.Point(215, 2);
+            this.txtPass.CustomButton.Location = new System.Drawing.Point(161, 2);
             this.txtPass.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtPass.CustomButton.Name = "";
-            this.txtPass.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtPass.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtPass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPass.CustomButton.TabIndex = 1;
             this.txtPass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -429,10 +445,10 @@
             // 
             // 
             this.txtEmailCliEdit.CustomButton.Image = null;
-            this.txtEmailCliEdit.CustomButton.Location = new System.Drawing.Point(215, 2);
+            this.txtEmailCliEdit.CustomButton.Location = new System.Drawing.Point(161, 2);
             this.txtEmailCliEdit.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtEmailCliEdit.CustomButton.Name = "";
-            this.txtEmailCliEdit.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtEmailCliEdit.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtEmailCliEdit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtEmailCliEdit.CustomButton.TabIndex = 1;
             this.txtEmailCliEdit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -463,10 +479,10 @@
             // 
             // 
             this.txtDirCliEdit.CustomButton.Image = null;
-            this.txtDirCliEdit.CustomButton.Location = new System.Drawing.Point(215, 2);
-            this.txtDirCliEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDirCliEdit.CustomButton.Location = new System.Drawing.Point(161, 2);
+            this.txtDirCliEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5);
             this.txtDirCliEdit.CustomButton.Name = "";
-            this.txtDirCliEdit.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtDirCliEdit.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtDirCliEdit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtDirCliEdit.CustomButton.TabIndex = 1;
             this.txtDirCliEdit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -506,10 +522,10 @@
             // 
             // 
             this.txtGiroEdit.CustomButton.Image = null;
-            this.txtGiroEdit.CustomButton.Location = new System.Drawing.Point(215, 2);
-            this.txtGiroEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtGiroEdit.CustomButton.Location = new System.Drawing.Point(161, 2);
+            this.txtGiroEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5);
             this.txtGiroEdit.CustomButton.Name = "";
-            this.txtGiroEdit.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtGiroEdit.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtGiroEdit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtGiroEdit.CustomButton.TabIndex = 1;
             this.txtGiroEdit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -549,10 +565,10 @@
             // 
             // 
             this.txtNomTiEdit.CustomButton.Image = null;
-            this.txtNomTiEdit.CustomButton.Location = new System.Drawing.Point(215, 2);
-            this.txtNomTiEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNomTiEdit.CustomButton.Location = new System.Drawing.Point(161, 2);
+            this.txtNomTiEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5);
             this.txtNomTiEdit.CustomButton.Name = "";
-            this.txtNomTiEdit.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtNomTiEdit.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtNomTiEdit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtNomTiEdit.CustomButton.TabIndex = 1;
             this.txtNomTiEdit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -592,10 +608,10 @@
             // 
             // 
             this.txtTelCliEdit.CustomButton.Image = null;
-            this.txtTelCliEdit.CustomButton.Location = new System.Drawing.Point(215, 2);
-            this.txtTelCliEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtTelCliEdit.CustomButton.Location = new System.Drawing.Point(161, 2);
+            this.txtTelCliEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5);
             this.txtTelCliEdit.CustomButton.Name = "";
-            this.txtTelCliEdit.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtTelCliEdit.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtTelCliEdit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtTelCliEdit.CustomButton.TabIndex = 1;
             this.txtTelCliEdit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -626,10 +642,10 @@
             // 
             // 
             this.txtPaginaEdit.CustomButton.Image = null;
-            this.txtPaginaEdit.CustomButton.Location = new System.Drawing.Point(215, 2);
-            this.txtPaginaEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPaginaEdit.CustomButton.Location = new System.Drawing.Point(161, 2);
+            this.txtPaginaEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5);
             this.txtPaginaEdit.CustomButton.Name = "";
-            this.txtPaginaEdit.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtPaginaEdit.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtPaginaEdit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPaginaEdit.CustomButton.TabIndex = 1;
             this.txtPaginaEdit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -669,10 +685,10 @@
             // 
             // 
             this.txtRutEmpEdit.CustomButton.Image = null;
-            this.txtRutEmpEdit.CustomButton.Location = new System.Drawing.Point(215, 2);
-            this.txtRutEmpEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtRutEmpEdit.CustomButton.Location = new System.Drawing.Point(161, 2);
+            this.txtRutEmpEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5);
             this.txtRutEmpEdit.CustomButton.Name = "";
-            this.txtRutEmpEdit.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtRutEmpEdit.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtRutEmpEdit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtRutEmpEdit.CustomButton.TabIndex = 1;
             this.txtRutEmpEdit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -703,10 +719,10 @@
             // 
             // 
             this.txtNomEmpEdit.CustomButton.Image = null;
-            this.txtNomEmpEdit.CustomButton.Location = new System.Drawing.Point(215, 2);
-            this.txtNomEmpEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNomEmpEdit.CustomButton.Location = new System.Drawing.Point(161, 2);
+            this.txtNomEmpEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5);
             this.txtNomEmpEdit.CustomButton.Name = "";
-            this.txtNomEmpEdit.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtNomEmpEdit.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtNomEmpEdit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtNomEmpEdit.CustomButton.TabIndex = 1;
             this.txtNomEmpEdit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -763,7 +779,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(742, 319);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -821,7 +837,7 @@
             this.tpLstCliente.HorizontalScrollbarHighlightOnWheel = false;
             this.tpLstCliente.HorizontalScrollbarSize = 12;
             this.tpLstCliente.Location = new System.Drawing.Point(4, 38);
-            this.tpLstCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpLstCliente.Margin = new System.Windows.Forms.Padding(4);
             this.tpLstCliente.Name = "tpLstCliente";
             this.tpLstCliente.Size = new System.Drawing.Size(1192, 471);
             this.tpLstCliente.TabIndex = 5;
@@ -892,22 +908,6 @@
             this.metroLabel2.Text = "Listado de Clientes";
             this.metroLabel2.UseCustomForeColor = true;
             // 
-            // btnRecargarCliente
-            // 
-            this.btnRecargarCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnRecargarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnRecargarCliente.Location = new System.Drawing.Point(477, 422);
-            this.btnRecargarCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRecargarCliente.Name = "btnRecargarCliente";
-            this.btnRecargarCliente.Size = new System.Drawing.Size(184, 33);
-            this.btnRecargarCliente.Style = MetroFramework.MetroColorStyle.White;
-            this.btnRecargarCliente.TabIndex = 33;
-            this.btnRecargarCliente.Text = "Recargar Listado";
-            this.btnRecargarCliente.UseCustomBackColor = true;
-            this.btnRecargarCliente.UseSelectable = true;
-            this.btnRecargarCliente.UseStyleColors = true;
-            this.btnRecargarCliente.Click += new System.EventHandler(this.btnRecargarCliente_Click);
-            // 
             // metroPanel1
             // 
             this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -915,9 +915,9 @@
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 12;
             this.metroPanel1.Location = new System.Drawing.Point(-42, 0);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(1242, 58);
+            this.metroPanel1.Size = new System.Drawing.Size(1251, 58);
             this.metroPanel1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroPanel1.TabIndex = 4;
             this.metroPanel1.UseCustomBackColor = true;
@@ -932,7 +932,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.tcGestionCli);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GestionCliente";
             this.Size = new System.Drawing.Size(1200, 565);
             this.tcGestionCli.ResumeLayout(false);

@@ -19,6 +19,7 @@ namespace NoMasAccidentesWF
         GestionarUsuarios GU = new GestionarUsuarios();
         GestionarContratos GContra = new GestionarContratos();
         GestionarSolicitud GS = new GestionarSolicitud();
+        GestionarReportes rc = new GestionarReportes();
 
         public MenuPrincipal()
         {
@@ -34,6 +35,7 @@ namespace NoMasAccidentesWF
             PanelSubMenuGestionarUsuario.Visible = false;
             PanelSubMenuGestionarClientes.Visible = false;
             PanelSubMenuGestionarContratos.Visible = false;
+            PanelSubMenuGestionarReportes.Visible = false;
         }
         // Aca se hace visible los botones del menu
         private void OcultarMenu()
@@ -46,6 +48,8 @@ namespace NoMasAccidentesWF
                 PanelSubMenuGestionarClientes.Visible = false;
             if (PanelSubMenuGestionarContratos.Visible == true)
                 PanelSubMenuGestionarContratos.Visible = false;
+            if (PanelSubMenuGestionarReportes.Visible = true)
+                PanelSubMenuGestionarReportes.Visible = false;
         }
 
         private void MostrarSubmenu(Panel SubMenu)
@@ -222,6 +226,23 @@ namespace NoMasAccidentesWF
             PanelDePestañas.Controls.Add(GS);
             GS.Show();
 
+        }
+
+        //boton Gestionar reportes
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            MostrarSubmenu(PanelSubMenuGestionarReportes);
+            rc.Dock = DockStyle.Fill;
+            PanelDePestañas.Controls.Clear();
+            PanelDePestañas.Controls.Add(rc);
+            rc.Show();
+        }
+
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            rc.TcReportes.SelectedTab = rc.tpAccidentes;
+            OcultarMenu();
         }
     }
 }

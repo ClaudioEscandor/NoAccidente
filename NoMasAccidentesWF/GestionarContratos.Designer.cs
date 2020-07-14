@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tcContratos = new MetroFramework.Controls.MetroTabControl();
             this.tpLstContrato = new MetroFramework.Controls.MetroTabPage();
             this.btnLstContratos = new MetroFramework.Controls.MetroButton();
@@ -71,9 +71,10 @@
             this.tcContratos.Controls.Add(this.tpLstContrato);
             this.tcContratos.Controls.Add(this.tpEditarContrato);
             this.tcContratos.Location = new System.Drawing.Point(0, 0);
+            this.tcContratos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tcContratos.Name = "tcContratos";
             this.tcContratos.SelectedIndex = 1;
-            this.tcContratos.Size = new System.Drawing.Size(900, 500);
+            this.tcContratos.Size = new System.Drawing.Size(1200, 615);
             this.tcContratos.TabIndex = 0;
             this.tcContratos.UseSelectable = true;
             // 
@@ -84,22 +85,24 @@
             this.tpLstContrato.Controls.Add(this.metroLabel6);
             this.tpLstContrato.HorizontalScrollbarBarColor = true;
             this.tpLstContrato.HorizontalScrollbarHighlightOnWheel = false;
-            this.tpLstContrato.HorizontalScrollbarSize = 10;
+            this.tpLstContrato.HorizontalScrollbarSize = 12;
             this.tpLstContrato.Location = new System.Drawing.Point(4, 38);
+            this.tpLstContrato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tpLstContrato.Name = "tpLstContrato";
-            this.tpLstContrato.Size = new System.Drawing.Size(892, 458);
+            this.tpLstContrato.Size = new System.Drawing.Size(1192, 573);
             this.tpLstContrato.TabIndex = 1;
             this.tpLstContrato.Text = "Listado de Contratos";
             this.tpLstContrato.VerticalScrollbarBarColor = true;
             this.tpLstContrato.VerticalScrollbarHighlightOnWheel = false;
-            this.tpLstContrato.VerticalScrollbarSize = 10;
+            this.tpLstContrato.VerticalScrollbarSize = 13;
             // 
             // btnLstContratos
             // 
             this.btnLstContratos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnLstContratos.Location = new System.Drawing.Point(519, 12);
+            this.btnLstContratos.Location = new System.Drawing.Point(692, 15);
+            this.btnLstContratos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLstContratos.Name = "btnLstContratos";
-            this.btnLstContratos.Size = new System.Drawing.Size(145, 23);
+            this.btnLstContratos.Size = new System.Drawing.Size(193, 28);
             this.btnLstContratos.Style = MetroFramework.MetroColorStyle.White;
             this.btnLstContratos.TabIndex = 18;
             this.btnLstContratos.Text = "Listar Contratos";
@@ -117,41 +120,42 @@
             this.grdLstContratos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grdLstContratos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grdLstContratos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdLstContratos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdLstContratos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdLstContratos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdLstContratos.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdLstContratos.DefaultCellStyle = dataGridViewCellStyle2;
             this.grdLstContratos.EnableHeadersVisualStyles = false;
             this.grdLstContratos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdLstContratos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdLstContratos.Location = new System.Drawing.Point(4, 49);
+            this.grdLstContratos.Location = new System.Drawing.Point(5, 60);
+            this.grdLstContratos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grdLstContratos.Name = "grdLstContratos";
             this.grdLstContratos.ReadOnly = true;
             this.grdLstContratos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdLstContratos.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdLstContratos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.grdLstContratos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdLstContratos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdLstContratos.Size = new System.Drawing.Size(892, 413);
+            this.grdLstContratos.Size = new System.Drawing.Size(1189, 508);
             this.grdLstContratos.TabIndex = 14;
             // 
             // metroLabel6
@@ -160,9 +164,10 @@
             this.metroLabel6.BackColor = System.Drawing.Color.Red;
             this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel6.ForeColor = System.Drawing.Color.Red;
-            this.metroLabel6.Location = new System.Drawing.Point(0, 9);
+            this.metroLabel6.Location = new System.Drawing.Point(0, 11);
+            this.metroLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(167, 25);
+            this.metroLabel6.Size = new System.Drawing.Size(178, 25);
             this.metroLabel6.TabIndex = 13;
             this.metroLabel6.Text = "Listado de Contratos";
             this.metroLabel6.UseCustomForeColor = true;
@@ -189,40 +194,44 @@
             this.tpEditarContrato.Controls.Add(this.btnEditContrato);
             this.tpEditarContrato.HorizontalScrollbarBarColor = true;
             this.tpEditarContrato.HorizontalScrollbarHighlightOnWheel = false;
-            this.tpEditarContrato.HorizontalScrollbarSize = 10;
+            this.tpEditarContrato.HorizontalScrollbarSize = 12;
             this.tpEditarContrato.Location = new System.Drawing.Point(4, 38);
+            this.tpEditarContrato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tpEditarContrato.Name = "tpEditarContrato";
-            this.tpEditarContrato.Size = new System.Drawing.Size(892, 458);
+            this.tpEditarContrato.Size = new System.Drawing.Size(1192, 573);
             this.tpEditarContrato.TabIndex = 2;
             this.tpEditarContrato.Text = "Editar Contrato";
             this.tpEditarContrato.VerticalScrollbarBarColor = true;
             this.tpEditarContrato.VerticalScrollbarHighlightOnWheel = false;
-            this.tpEditarContrato.VerticalScrollbarSize = 10;
+            this.tpEditarContrato.VerticalScrollbarSize = 13;
             // 
             // dpFecExpiracion
             // 
-            this.dpFecExpiracion.Location = new System.Drawing.Point(729, 139);
-            this.dpFecExpiracion.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dpFecExpiracion.Location = new System.Drawing.Point(972, 171);
+            this.dpFecExpiracion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dpFecExpiracion.MinimumSize = new System.Drawing.Size(0, 30);
             this.dpFecExpiracion.Name = "dpFecExpiracion";
-            this.dpFecExpiracion.Size = new System.Drawing.Size(146, 29);
+            this.dpFecExpiracion.Size = new System.Drawing.Size(193, 30);
             this.dpFecExpiracion.TabIndex = 44;
             // 
             // metroLabel11
             // 
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel11.Location = new System.Drawing.Point(3, 69);
+            this.metroLabel11.Location = new System.Drawing.Point(4, 85);
+            this.metroLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(153, 19);
+            this.metroLabel11.Size = new System.Drawing.Size(165, 20);
             this.metroLabel11.TabIndex = 43;
             this.metroLabel11.Text = "Seleccione un Contrato:";
             // 
             // chkMantencion
             // 
             this.chkMantencion.AutoSize = true;
-            this.chkMantencion.Location = new System.Drawing.Point(683, 195);
+            this.chkMantencion.Location = new System.Drawing.Point(911, 240);
+            this.chkMantencion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkMantencion.Name = "chkMantencion";
-            this.chkMantencion.Size = new System.Drawing.Size(87, 15);
+            this.chkMantencion.Size = new System.Drawing.Size(92, 17);
             this.chkMantencion.TabIndex = 42;
             this.chkMantencion.Text = "Mantencion";
             this.chkMantencion.UseSelectable = true;
@@ -230,9 +239,10 @@
             // chkSeguridad
             // 
             this.chkSeguridad.AutoSize = true;
-            this.chkSeguridad.Location = new System.Drawing.Point(756, 172);
+            this.chkSeguridad.Location = new System.Drawing.Point(1008, 212);
+            this.chkSeguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkSeguridad.Name = "chkSeguridad";
-            this.chkSeguridad.Size = new System.Drawing.Size(76, 15);
+            this.chkSeguridad.Size = new System.Drawing.Size(84, 17);
             this.chkSeguridad.TabIndex = 41;
             this.chkSeguridad.Text = "Seguridad";
             this.chkSeguridad.UseSelectable = true;
@@ -240,9 +250,10 @@
             // chkAsesoria
             // 
             this.chkAsesoria.AutoSize = true;
-            this.chkAsesoria.Location = new System.Drawing.Point(683, 172);
+            this.chkAsesoria.Location = new System.Drawing.Point(911, 212);
+            this.chkAsesoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkAsesoria.Name = "chkAsesoria";
-            this.chkAsesoria.Size = new System.Drawing.Size(67, 15);
+            this.chkAsesoria.Size = new System.Drawing.Size(74, 17);
             this.chkAsesoria.TabIndex = 40;
             this.chkAsesoria.Text = "Asesoria";
             this.chkAsesoria.UseSelectable = true;
@@ -250,9 +261,10 @@
             // metroLabel10
             // 
             this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(617, 168);
+            this.metroLabel10.Location = new System.Drawing.Point(823, 207);
+            this.metroLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(60, 19);
+            this.metroLabel10.Size = new System.Drawing.Size(64, 20);
             this.metroLabel10.TabIndex = 39;
             this.metroLabel10.Text = "Servicios";
             // 
@@ -260,18 +272,20 @@
             // 
             this.metroLabel9.AutoSize = true;
             this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel9.Location = new System.Drawing.Point(616, 69);
+            this.metroLabel9.Location = new System.Drawing.Point(821, 85);
+            this.metroLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(67, 19);
+            this.metroLabel9.Size = new System.Drawing.Size(70, 20);
             this.metroLabel9.TabIndex = 38;
             this.metroLabel9.Text = "Contrato:";
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(616, 136);
+            this.metroLabel2.Location = new System.Drawing.Point(821, 167);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(107, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(113, 20);
             this.metroLabel2.TabIndex = 27;
             this.metroLabel2.Text = "Fecha Expiración";
             // 
@@ -282,50 +296,52 @@
             this.grdEditContrato.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grdEditContrato.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grdEditContrato.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdEditContrato.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdEditContrato.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.grdEditContrato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdEditContrato.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdEditContrato.DefaultCellStyle = dataGridViewCellStyle5;
             this.grdEditContrato.EnableHeadersVisualStyles = false;
             this.grdEditContrato.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdEditContrato.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdEditContrato.Location = new System.Drawing.Point(12, 104);
+            this.grdEditContrato.Location = new System.Drawing.Point(16, 128);
+            this.grdEditContrato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grdEditContrato.Name = "grdEditContrato";
             this.grdEditContrato.ReadOnly = true;
             this.grdEditContrato.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdEditContrato.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdEditContrato.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.grdEditContrato.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdEditContrato.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdEditContrato.Size = new System.Drawing.Size(586, 338);
+            this.grdEditContrato.Size = new System.Drawing.Size(781, 416);
             this.grdEditContrato.TabIndex = 35;
             this.grdEditContrato.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdEditContrato_CellClick);
             // 
             // metroButton2
             // 
             this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.metroButton2.Location = new System.Drawing.Point(414, 39);
+            this.metroButton2.Location = new System.Drawing.Point(552, 48);
+            this.metroButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(134, 23);
+            this.metroButton2.Size = new System.Drawing.Size(179, 28);
             this.metroButton2.Style = MetroFramework.MetroColorStyle.White;
             this.metroButton2.TabIndex = 34;
             this.metroButton2.Text = "Buscar Contrato";
@@ -340,16 +356,18 @@
             // 
             // 
             this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(201, 1);
+            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(361, 2);
+            this.metroTextBox2.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(31, 28);
             this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox2.CustomButton.TabIndex = 1;
             this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox2.CustomButton.UseSelectable = true;
             this.metroTextBox2.CustomButton.Visible = false;
             this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(185, 39);
+            this.metroTextBox2.Location = new System.Drawing.Point(247, 48);
+            this.metroTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Name = "metroTextBox2";
             this.metroTextBox2.PasswordChar = '\0';
@@ -358,7 +376,7 @@
             this.metroTextBox2.SelectionLength = 0;
             this.metroTextBox2.SelectionStart = 0;
             this.metroTextBox2.ShortcutsEnabled = true;
-            this.metroTextBox2.Size = new System.Drawing.Size(223, 23);
+            this.metroTextBox2.Size = new System.Drawing.Size(297, 28);
             this.metroTextBox2.TabIndex = 33;
             this.metroTextBox2.UseSelectable = true;
             this.metroTextBox2.Visible = false;
@@ -368,9 +386,10 @@
             // metroLabel16
             // 
             this.metroLabel16.AutoSize = true;
-            this.metroLabel16.Location = new System.Drawing.Point(93, 39);
+            this.metroLabel16.Location = new System.Drawing.Point(124, 48);
+            this.metroLabel16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel16.Name = "metroLabel16";
-            this.metroLabel16.Size = new System.Drawing.Size(72, 19);
+            this.metroLabel16.Size = new System.Drawing.Size(76, 20);
             this.metroLabel16.TabIndex = 32;
             this.metroLabel16.Text = "Rut Cliente";
             this.metroLabel16.Visible = false;
@@ -378,19 +397,21 @@
             // cboTipoContrEdit
             // 
             this.cboTipoContrEdit.FormattingEnabled = true;
-            this.cboTipoContrEdit.ItemHeight = 23;
-            this.cboTipoContrEdit.Location = new System.Drawing.Point(729, 104);
+            this.cboTipoContrEdit.ItemHeight = 24;
+            this.cboTipoContrEdit.Location = new System.Drawing.Point(972, 128);
+            this.cboTipoContrEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboTipoContrEdit.Name = "cboTipoContrEdit";
-            this.cboTipoContrEdit.Size = new System.Drawing.Size(146, 29);
+            this.cboTipoContrEdit.Size = new System.Drawing.Size(193, 30);
             this.cboTipoContrEdit.TabIndex = 31;
             this.cboTipoContrEdit.UseSelectable = true;
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(616, 104);
+            this.metroLabel1.Location = new System.Drawing.Point(821, 128);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(91, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(93, 20);
             this.metroLabel1.TabIndex = 30;
             this.metroLabel1.Text = "Tipo Contrato";
             // 
@@ -400,16 +421,18 @@
             // 
             // 
             this.txtDetContrEdit.CustomButton.Image = null;
-            this.txtDetContrEdit.CustomButton.Location = new System.Drawing.Point(83, 2);
+            this.txtDetContrEdit.CustomButton.Location = new System.Drawing.Point(169, 1);
+            this.txtDetContrEdit.CustomButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtDetContrEdit.CustomButton.Name = "";
-            this.txtDetContrEdit.CustomButton.Size = new System.Drawing.Size(173, 173);
+            this.txtDetContrEdit.CustomButton.Size = new System.Drawing.Size(289, 267);
             this.txtDetContrEdit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtDetContrEdit.CustomButton.TabIndex = 1;
             this.txtDetContrEdit.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtDetContrEdit.CustomButton.UseSelectable = true;
             this.txtDetContrEdit.CustomButton.Visible = false;
             this.txtDetContrEdit.Lines = new string[0];
-            this.txtDetContrEdit.Location = new System.Drawing.Point(618, 235);
+            this.txtDetContrEdit.Location = new System.Drawing.Point(824, 289);
+            this.txtDetContrEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDetContrEdit.MaxLength = 32767;
             this.txtDetContrEdit.Name = "txtDetContrEdit";
             this.txtDetContrEdit.PasswordChar = '\0';
@@ -418,7 +441,7 @@
             this.txtDetContrEdit.SelectionLength = 0;
             this.txtDetContrEdit.SelectionStart = 0;
             this.txtDetContrEdit.ShortcutsEnabled = true;
-            this.txtDetContrEdit.Size = new System.Drawing.Size(259, 178);
+            this.txtDetContrEdit.Size = new System.Drawing.Size(345, 219);
             this.txtDetContrEdit.TabIndex = 28;
             this.txtDetContrEdit.UseSelectable = true;
             this.txtDetContrEdit.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -427,9 +450,10 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(618, 213);
+            this.metroLabel3.Location = new System.Drawing.Point(824, 262);
+            this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(105, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(109, 20);
             this.metroLabel3.TabIndex = 26;
             this.metroLabel3.Text = "Detalle Contrato";
             // 
@@ -438,9 +462,10 @@
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel5.ForeColor = System.Drawing.Color.Red;
-            this.metroLabel5.Location = new System.Drawing.Point(8, 4);
+            this.metroLabel5.Location = new System.Drawing.Point(11, 5);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(126, 25);
+            this.metroLabel5.Size = new System.Drawing.Size(134, 25);
             this.metroLabel5.TabIndex = 12;
             this.metroLabel5.Text = "Editar Contrato";
             this.metroLabel5.UseCustomForeColor = true;
@@ -448,9 +473,10 @@
             // btnEditContrato
             // 
             this.btnEditContrato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnEditContrato.Location = new System.Drawing.Point(618, 419);
+            this.btnEditContrato.Location = new System.Drawing.Point(824, 516);
+            this.btnEditContrato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditContrato.Name = "btnEditContrato";
-            this.btnEditContrato.Size = new System.Drawing.Size(259, 23);
+            this.btnEditContrato.Size = new System.Drawing.Size(345, 28);
             this.btnEditContrato.Style = MetroFramework.MetroColorStyle.White;
             this.btnEditContrato.TabIndex = 11;
             this.btnEditContrato.Text = "Editar";
@@ -464,26 +490,28 @@
             this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.HorizontalScrollbarSize = 12;
             this.metroPanel1.Location = new System.Drawing.Point(0, 0);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(900, 47);
+            this.metroPanel1.Size = new System.Drawing.Size(1200, 58);
             this.metroPanel1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroPanel1.TabIndex = 5;
             this.metroPanel1.UseCustomBackColor = true;
             this.metroPanel1.UseStyleColors = true;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.VerticalScrollbarSize = 13;
             // 
             // GestionarContratos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.tcContratos);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GestionarContratos";
-            this.Size = new System.Drawing.Size(900, 527);
+            this.Size = new System.Drawing.Size(1200, 649);
             this.tcContratos.ResumeLayout(false);
             this.tpLstContrato.ResumeLayout(false);
             this.tpLstContrato.PerformLayout();
