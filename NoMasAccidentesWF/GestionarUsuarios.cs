@@ -27,8 +27,6 @@ namespace NoMasAccidentesWF
         ProfesionalControlador proC = new ProfesionalControlador();
 
         ClienteControlador cliControlador = new ClienteControlador();
-        ContratoControlador contControlador = new ContratoControlador();
-        ServicioControlador servControlador = new ServicioControlador();
         SucursalControlador suControlador = new SucursalControlador();
 
         public GestionarUsuarios()
@@ -224,28 +222,28 @@ namespace NoMasAccidentesWF
             txtPassUsu.Text = "";
         }
 
-        private void btnBuscarEmailUsu_Click(object sender, EventArgs e)
-        {
-            var list = UsuC.buscarUsuario(txtBuscarEmail.Text.ToLower());
-            List<Usuario> listaUsu = new List<Usuario>();
+        //private void btnBuscarEmailUsu_Click(object sender, EventArgs e)
+        //{
+        //    var list = UsuC.buscarUsuario(txtBuscarEmail.Text.ToLower());
+        //    List<Usuario> listaUsu = new List<Usuario>();
 
-            foreach (var pro in list)
-            {
-                Usuario item = new Usuario();
-                item.email = pro.email;
-                item.password = pro.password;
-                item.tipo_usuario = pro.tipo_usuario;
-                item.estado = pro.estado;
+        //    foreach (var pro in list)
+        //    {
+        //        Usuario item = new Usuario();
+        //        item.email = pro.email;
+        //        item.password = pro.password;
+        //        item.tipo_usuario = pro.tipo_usuario;
+        //        item.estado = pro.estado;
 
-                listaUsu.Add(item);
-                limpiarBuscadorUsuario();
-            }
+        //        listaUsu.Add(item);
+        //        limpiarBuscadorUsuario();
+        //    }
 
-            grdListarUsuario.DataSource = listaUsu;
-            grdListarUsuario.Columns["idUsuario"].Visible = false;
-            grdListarUsuario.Columns["email"].Width = 200;
-            grdListarUsuario.Columns["password"].Width = 80;
-        }
+        //    grdListarUsuario.DataSource = listaUsu;
+        //    grdListarUsuario.Columns["idUsuario"].Visible = false;
+        //    grdListarUsuario.Columns["email"].Width = 200;
+        //    grdListarUsuario.Columns["password"].Width = 80;
+        //}
         private void limpiarBuscadorUsuario()
         {
             txtBuscarEmail.Text = "";
@@ -517,6 +515,7 @@ namespace NoMasAccidentesWF
                 string email, password;
                 email = txtEditarEmail.Text;
                 password = txtContraseñaEditar.Text;
+
                 var tipo_usuario = cboUsuarioEditar.SelectedItem as object;
                 int id_tipo_usuario = int.Parse(tipo_usuario.GetType().GetProperty("id").GetValue(tipo_usuario, null).ToString());
 
@@ -557,9 +556,6 @@ namespace NoMasAccidentesWF
                 {
                     MessageBox.Show("No se logro Modificar el usuario", "Error");
                 }
-
-
-                return;
             }
             catch (Exception ex)
             {
