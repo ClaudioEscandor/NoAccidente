@@ -39,10 +39,12 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.menuLateral = new MetroFramework.Controls.MetroPanel();
+            this.PanelSubMenuGestionarReportes = new MetroFramework.Controls.MetroPanel();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnGestionarSolicitud = new MetroFramework.Controls.MetroButton();
-            this.PanelSubMenuGestionarContratos = new MetroFramework.Controls.MetroPanel();
-            this.btnListarContratos = new MetroFramework.Controls.MetroButton();
             this.PanelSubMenuGestionarUsuario = new MetroFramework.Controls.MetroPanel();
             this.btnListarUsuarios = new MetroFramework.Controls.MetroButton();
             this.btnModificarUsuario = new MetroFramework.Controls.MetroButton();
@@ -57,23 +59,18 @@
             this.btnAgregarProfesional = new MetroFramework.Controls.MetroButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.PanelDePestañas = new MetroFramework.Controls.MetroPanel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.PanelSubMenuGestionarReportes = new MetroFramework.Controls.MetroPanel();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.menuLateral.SuspendLayout();
+            this.PanelSubMenuGestionarReportes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.PanelSubMenuGestionarContratos.SuspendLayout();
             this.PanelSubMenuGestionarUsuario.SuspendLayout();
             this.PanelSubMenuGestionarClientes.SuspendLayout();
             this.panelSubMenuProfesional.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.PanelSubMenuGestionarReportes.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGestionarProfesionales
@@ -200,7 +197,6 @@
             this.menuLateral.Controls.Add(this.pictureBox7);
             this.menuLateral.Controls.Add(this.metroButton1);
             this.menuLateral.Controls.Add(this.pictureBox6);
-            this.menuLateral.Controls.Add(this.PanelSubMenuGestionarContratos);
             this.menuLateral.Controls.Add(this.pictureBox4);
             this.menuLateral.Controls.Add(this.btnGestionarSolicitud);
             this.menuLateral.Controls.Add(this.PanelSubMenuGestionarUsuario);
@@ -229,10 +225,68 @@
             this.menuLateral.VerticalScrollbarHighlightOnWheel = false;
             this.menuLateral.VerticalScrollbarSize = 11;
             // 
+            // PanelSubMenuGestionarReportes
+            // 
+            this.PanelSubMenuGestionarReportes.BackColor = System.Drawing.Color.Transparent;
+            this.PanelSubMenuGestionarReportes.Controls.Add(this.metroButton3);
+            this.PanelSubMenuGestionarReportes.ForeColor = System.Drawing.Color.Transparent;
+            this.PanelSubMenuGestionarReportes.HorizontalScrollbarBarColor = true;
+            this.PanelSubMenuGestionarReportes.HorizontalScrollbarHighlightOnWheel = false;
+            this.PanelSubMenuGestionarReportes.HorizontalScrollbarSize = 10;
+            this.PanelSubMenuGestionarReportes.Location = new System.Drawing.Point(12, 786);
+            this.PanelSubMenuGestionarReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PanelSubMenuGestionarReportes.Name = "PanelSubMenuGestionarReportes";
+            this.PanelSubMenuGestionarReportes.Size = new System.Drawing.Size(317, 55);
+            this.PanelSubMenuGestionarReportes.TabIndex = 16;
+            this.PanelSubMenuGestionarReportes.UseCustomBackColor = true;
+            this.PanelSubMenuGestionarReportes.UseCustomForeColor = true;
+            this.PanelSubMenuGestionarReportes.VerticalScrollbarBarColor = true;
+            this.PanelSubMenuGestionarReportes.VerticalScrollbarHighlightOnWheel = false;
+            this.PanelSubMenuGestionarReportes.VerticalScrollbarSize = 11;
+            // 
+            // metroButton3
+            // 
+            this.metroButton3.Location = new System.Drawing.Point(77, 0);
+            this.metroButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(231, 55);
+            this.metroButton3.Style = MetroFramework.MetroColorStyle.Black;
+            this.metroButton3.TabIndex = 14;
+            this.metroButton3.Text = "Calcular Accidentes";
+            this.metroButton3.UseCustomBackColor = true;
+            this.metroButton3.UseSelectable = true;
+            this.metroButton3.UseStyleColors = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(12, 730);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(77, 55);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 19;
+            this.pictureBox7.TabStop = false;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.BackColor = System.Drawing.Color.Transparent;
+            this.metroButton1.Location = new System.Drawing.Point(87, 730);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(235, 55);
+            this.metroButton1.Style = MetroFramework.MetroColorStyle.Black;
+            this.metroButton1.TabIndex = 18;
+            this.metroButton1.Text = "Gestionar Reportes";
+            this.metroButton1.UseCustomBackColor = true;
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.UseStyleColors = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(8, 673);
+            this.pictureBox6.Location = new System.Drawing.Point(8, 650);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(81, 53);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -242,7 +296,7 @@
             // btnGestionarSolicitud
             // 
             this.btnGestionarSolicitud.BackColor = System.Drawing.Color.Transparent;
-            this.btnGestionarSolicitud.Location = new System.Drawing.Point(87, 673);
+            this.btnGestionarSolicitud.Location = new System.Drawing.Point(87, 650);
             this.btnGestionarSolicitud.Margin = new System.Windows.Forms.Padding(4);
             this.btnGestionarSolicitud.Name = "btnGestionarSolicitud";
             this.btnGestionarSolicitud.Size = new System.Drawing.Size(235, 55);
@@ -253,37 +307,6 @@
             this.btnGestionarSolicitud.UseSelectable = true;
             this.btnGestionarSolicitud.UseStyleColors = true;
             this.btnGestionarSolicitud.Click += new System.EventHandler(this.btnGestionarSolicitud_Click);
-            // 
-            // PanelSubMenuGestionarContratos
-            // 
-            this.PanelSubMenuGestionarContratos.Controls.Add(this.btnListarContratos);
-            this.PanelSubMenuGestionarContratos.HorizontalScrollbarBarColor = true;
-            this.PanelSubMenuGestionarContratos.HorizontalScrollbarHighlightOnWheel = false;
-            this.PanelSubMenuGestionarContratos.HorizontalScrollbarSize = 10;
-            this.PanelSubMenuGestionarContratos.Location = new System.Drawing.Point(1, 621);
-            this.PanelSubMenuGestionarContratos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PanelSubMenuGestionarContratos.Name = "PanelSubMenuGestionarContratos";
-            this.PanelSubMenuGestionarContratos.Size = new System.Drawing.Size(321, 55);
-            this.PanelSubMenuGestionarContratos.TabIndex = 15;
-            this.PanelSubMenuGestionarContratos.UseCustomBackColor = true;
-            this.PanelSubMenuGestionarContratos.UseCustomForeColor = true;
-            this.PanelSubMenuGestionarContratos.VerticalScrollbarBarColor = true;
-            this.PanelSubMenuGestionarContratos.VerticalScrollbarHighlightOnWheel = false;
-            this.PanelSubMenuGestionarContratos.VerticalScrollbarSize = 11;
-            // 
-            // btnListarContratos
-            // 
-            this.btnListarContratos.Location = new System.Drawing.Point(86, 0);
-            this.btnListarContratos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnListarContratos.Name = "btnListarContratos";
-            this.btnListarContratos.Size = new System.Drawing.Size(235, 55);
-            this.btnListarContratos.Style = MetroFramework.MetroColorStyle.Black;
-            this.btnListarContratos.TabIndex = 13;
-            this.btnListarContratos.Text = "ListarContratos";
-            this.btnListarContratos.UseCustomBackColor = true;
-            this.btnListarContratos.UseSelectable = true;
-            this.btnListarContratos.UseStyleColors = true;
-            this.btnListarContratos.Click += new System.EventHandler(this.btnListarContratos_Click);
             // 
             // PanelSubMenuGestionarUsuario
             // 
@@ -508,64 +531,6 @@
             this.PanelDePestañas.VerticalScrollbarHighlightOnWheel = false;
             this.PanelDePestañas.VerticalScrollbarSize = 11;
             // 
-            // metroButton1
-            // 
-            this.metroButton1.BackColor = System.Drawing.Color.Transparent;
-            this.metroButton1.Location = new System.Drawing.Point(87, 730);
-            this.metroButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(235, 55);
-            this.metroButton1.Style = MetroFramework.MetroColorStyle.Black;
-            this.metroButton1.TabIndex = 18;
-            this.metroButton1.Text = "Gestionar Reportes";
-            this.metroButton1.UseCustomBackColor = true;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.UseStyleColors = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(12, 730);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(77, 55);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 19;
-            this.pictureBox7.TabStop = false;
-            // 
-            // PanelSubMenuGestionarReportes
-            // 
-            this.PanelSubMenuGestionarReportes.BackColor = System.Drawing.Color.Transparent;
-            this.PanelSubMenuGestionarReportes.Controls.Add(this.metroButton3);
-            this.PanelSubMenuGestionarReportes.ForeColor = System.Drawing.Color.Transparent;
-            this.PanelSubMenuGestionarReportes.HorizontalScrollbarBarColor = true;
-            this.PanelSubMenuGestionarReportes.HorizontalScrollbarHighlightOnWheel = false;
-            this.PanelSubMenuGestionarReportes.HorizontalScrollbarSize = 10;
-            this.PanelSubMenuGestionarReportes.Location = new System.Drawing.Point(12, 786);
-            this.PanelSubMenuGestionarReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PanelSubMenuGestionarReportes.Name = "PanelSubMenuGestionarReportes";
-            this.PanelSubMenuGestionarReportes.Size = new System.Drawing.Size(317, 55);
-            this.PanelSubMenuGestionarReportes.TabIndex = 16;
-            this.PanelSubMenuGestionarReportes.UseCustomBackColor = true;
-            this.PanelSubMenuGestionarReportes.UseCustomForeColor = true;
-            this.PanelSubMenuGestionarReportes.VerticalScrollbarBarColor = true;
-            this.PanelSubMenuGestionarReportes.VerticalScrollbarHighlightOnWheel = false;
-            this.PanelSubMenuGestionarReportes.VerticalScrollbarSize = 11;
-            // 
-            // metroButton3
-            // 
-            this.metroButton3.Location = new System.Drawing.Point(77, 0);
-            this.metroButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(231, 55);
-            this.metroButton3.Style = MetroFramework.MetroColorStyle.Black;
-            this.metroButton3.TabIndex = 14;
-            this.metroButton3.Text = "Calcular Accidentes";
-            this.metroButton3.UseCustomBackColor = true;
-            this.metroButton3.UseSelectable = true;
-            this.metroButton3.UseStyleColors = true;
-            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -590,14 +555,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.menuLateral.ResumeLayout(false);
+            this.PanelSubMenuGestionarReportes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.PanelSubMenuGestionarContratos.ResumeLayout(false);
             this.PanelSubMenuGestionarUsuario.ResumeLayout(false);
             this.PanelSubMenuGestionarClientes.ResumeLayout(false);
             this.panelSubMenuProfesional.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.PanelSubMenuGestionarReportes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -625,8 +589,6 @@
         private MetroFramework.Controls.MetroPanel PanelSubMenuGestionarClientes;
         private MetroFramework.Controls.MetroButton btnListarCliente;
         private MetroFramework.Controls.MetroButton btnModificarCLiente;
-        private MetroFramework.Controls.MetroPanel PanelSubMenuGestionarContratos;
-        private MetroFramework.Controls.MetroButton btnListarContratos;
         private MetroFramework.Controls.MetroButton btnListarUsuarios;
         private System.Windows.Forms.PictureBox pictureBox5;
         private MetroFramework.Controls.MetroPanel PanelDePestañas;

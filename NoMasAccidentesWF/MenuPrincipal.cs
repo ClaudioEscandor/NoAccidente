@@ -34,7 +34,6 @@ namespace NoMasAccidentesWF
             panelSubMenuProfesional.Visible = false;
             PanelSubMenuGestionarUsuario.Visible = false;
             PanelSubMenuGestionarClientes.Visible = false;
-            PanelSubMenuGestionarContratos.Visible = false;
             PanelSubMenuGestionarReportes.Visible = false;
         }
         // Aca se hace visible los botones del menu
@@ -46,8 +45,6 @@ namespace NoMasAccidentesWF
                 PanelSubMenuGestionarUsuario.Visible = false;
             if (PanelSubMenuGestionarClientes.Visible == true)
                 PanelSubMenuGestionarClientes.Visible = false;
-            if (PanelSubMenuGestionarContratos.Visible == true)
-                PanelSubMenuGestionarContratos.Visible = false;
             if (PanelSubMenuGestionarReportes.Visible = true)
                 PanelSubMenuGestionarReportes.Visible = false;
         }
@@ -96,6 +93,7 @@ namespace NoMasAccidentesWF
         {
             //Codigo del boton
             GP.MetroTabGestionProfesional.SelectedTab = GP.tpEditarProf;
+            GP.cargarGrdEditProfesional();
             OcultarMenu();
         }
 
@@ -178,7 +176,6 @@ namespace NoMasAccidentesWF
 
         private void btnGestionarContratos_Click(object sender, EventArgs e)
         {
-            MostrarSubmenu(PanelSubMenuGestionarContratos);
 
             GContra.Dock = DockStyle.Fill;
             PanelDePestañas.Controls.Clear();

@@ -30,7 +30,7 @@ namespace NoMasAccidentesWF
             cargarGrdEditProfesional();
         }
         //metodo para listar los datos en la grilla
-        private void cargarGrdEditProfesional()
+        public void cargarGrdEditProfesional()
         {
             grdEditarProfe.DataSource = proC.listarProfesionalEditar();
         }
