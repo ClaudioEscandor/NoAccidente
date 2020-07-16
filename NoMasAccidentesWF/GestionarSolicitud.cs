@@ -25,7 +25,7 @@ namespace NoMasAccidentesWF
             cargarProfesionales();
         }
 
-        private void cargarProfesionales()
+        public void cargarProfesionales()
         {
             grdProfesional.DataSource = pc.listarProfecional();
         }

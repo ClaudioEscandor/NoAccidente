@@ -217,6 +217,7 @@ namespace NoMasAccidentesWF
             PanelDePestañas.Controls.Clear();
             PanelDePestañas.Controls.Add(GS);
             GS.Show();
+            GS.cargarProfesionales();
 
         }
 

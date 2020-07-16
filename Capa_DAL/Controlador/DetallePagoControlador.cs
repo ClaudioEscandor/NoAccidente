@@ -39,7 +39,7 @@ namespace Capa_DAL.Controlador
 
                         detapago.id_pago = int.Parse(dr["ID_PAGO"].ToString());
                         detapago.estado_pago = dr["ESTADO_PAGO"].ToString();
-                        detapago.nombre_titular = dr["NOMBRE_TITULAR"].ToString();
+                        detapago.nombre_titular = dr["NOMBRE_TITUTAL"].ToString();
                         detapago.rut_empresa = dr["RUT_EMPRESA"].ToString();
 
                         listpago.Add(detapago);
