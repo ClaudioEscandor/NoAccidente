@@ -1,4 +1,5 @@
 ﻿
+using Capa_DAL.Modelo;
 using iText.IO.Image;
 using iText.Kernel.Pdf;
 using iText.Kernel.Pdf.Canvas.Draw;
@@ -16,10 +17,19 @@ namespace Capa_DAL.Controlador
 {
     public class PDFControlador
     {
-
-        public void crearPdf()
+        public int MyProperty { get; set; }
+        public PDFControlador()
         {
-            string rutaEscritorio = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\pagos.pdf";
+
+        }
+
+        public void crearPdf(int idPago)
+        {
+            ReporteControlador reporte = new ReporteControlador();
+
+            PDFpago pdfPago = reporte.ListarPagoPdf(idPago);
+
+            string rutaEscritorio = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\"+pdfPago.nombre_titutal + DateTime.Now.ToString("dd/MMMM/yyyy/HH/mm/ss") + ".pdf";
 
             PdfWriter writer = new PdfWriter(rutaEscritorio);
             PdfDocument pdf = new PdfDocument(writer);
@@ -52,7 +62,7 @@ namespace Capa_DAL.Controlador
 
             Cell nomCli2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("sadsadasdasda"));
+               .Add(new Paragraph(pdfPago.nombre_titutal));
             nomCli2.SetBorder(Border.NO_BORDER);
 
             Cell giroEmp = new Cell(1, 2)
@@ -62,7 +72,7 @@ namespace Capa_DAL.Controlador
 
             Cell giroEmp2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("tyytuytutyuty"));
+               .Add(new Paragraph(pdfPago.giro));
             giroEmp2.SetBorder(Border.NO_BORDER);
 
             Cell rutCli = new Cell(1, 2)
@@ -72,7 +82,7 @@ namespace Capa_DAL.Controlador
 
             Cell rutCli2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("tyytuytutyuty"));
+               .Add(new Paragraph(pdfPago.rut_empresa));
             rutCli2.SetBorder(Border.NO_BORDER);
 
             Cell tel = new Cell(1, 2)
@@ -82,7 +92,7 @@ namespace Capa_DAL.Controlador
 
             Cell tel2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("sadsadasdsadasdasd"));
+               .Add(new Paragraph(pdfPago.telefono.ToString()));
             tel2.SetBorder(Border.NO_BORDER);
 
             Cell serv = new Cell(1, 2)
@@ -92,7 +102,7 @@ namespace Capa_DAL.Controlador
 
             Cell serv2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("sadsadasdsadasdasd"));
+               .Add(new Paragraph(pdfPago.servicios));
             serv2.SetBorder(Border.NO_BORDER);
 
             Cell fecIni = new Cell(1, 2)
@@ -102,7 +112,7 @@ namespace Capa_DAL.Controlador
 
             Cell fecIni2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("213213131312"));
+               .Add(new Paragraph(pdfPago.fecha_realizacion.ToString("MM/dd/yyyy")));
             fecIni2.SetBorder(Border.NO_BORDER);
 
             Cell fecTer = new Cell(1, 2)
@@ -112,7 +122,7 @@ namespace Capa_DAL.Controlador
 
             Cell fecTer2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("2132121321313131312"));
+               .Add(new Paragraph(pdfPago.fecha_expiracion.ToString("MM/dd/yyyy")));
             fecTer2.SetBorder(Border.NO_BORDER);
 
             Cell monto = new Cell(1, 2)
@@ -122,7 +132,7 @@ namespace Capa_DAL.Controlador
 
             Cell monto2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("sadsadsadsadasda"));
+               .Add(new Paragraph("$"+pdfPago.monto.ToString()));
             monto2.SetBorder(Border.NO_BORDER);
 
             Cell impuesto = new Cell(1, 2)
@@ -132,7 +142,7 @@ namespace Capa_DAL.Controlador
 
             Cell impuesto2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("sadsadsadsadasda"));
+               .Add(new Paragraph(pdfPago.impuesto.ToString()+"%"));
             impuesto2.SetBorder(Border.NO_BORDER);
 
             Cell monto_total = new Cell(1, 2)
@@ -142,7 +152,7 @@ namespace Capa_DAL.Controlador
 
             Cell monto_total2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("sadsadsadsadasda"));
+               .Add(new Paragraph("$"+pdfPago.monto_total.ToString()));
             monto_total2.SetBorder(Border.NO_BORDER);
 
             Cell estado = new Cell(1, 2)
@@ -152,7 +162,7 @@ namespace Capa_DAL.Controlador
 
             Cell estado2 = new Cell(1, 2)
                .SetTextAlignment(TextAlignment.LEFT)
-               .Add(new Paragraph("sadsadsadsadasda"));
+               .Add(new Paragraph(pdfPago.estado_pago));
             estado2.SetBorder(Border.NO_BORDER);
 
 

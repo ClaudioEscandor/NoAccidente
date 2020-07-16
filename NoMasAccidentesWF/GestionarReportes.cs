@@ -23,12 +23,13 @@ namespace NoMasAccidentesWF
         AccidenteControlador ac = new AccidenteControlador();
 
         PDFControlador pdfC = new PDFControlador();
+        int idPago = 0;
     
         public GestionarReportes()
         {
             InitializeComponent();
             cargarCantAccidente();
-            pdfC.crearPdf();
+            
         }
 
         private void GestionarReportes_Load(object sender, EventArgs e)
@@ -44,6 +45,20 @@ namespace NoMasAccidentesWF
 
         public void cargarCantAccidente(){
             grdAccidente.DataSource = ac.listarCantidadAccidente();
+        }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            pdfC.crearPdf(idPago);
+            MessageBox.Show("Se creo el pdf en el escritorio","Correcto");
+        }
+
+        private void grListarDetaPago_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                idPago = Convert.ToInt32(this.grListarDetaPago.Rows[e.RowIndex].Cells["id_pago"].Value);
+            }
         }
     }
 }
