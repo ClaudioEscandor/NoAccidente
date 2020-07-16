@@ -104,12 +104,7 @@ namespace NoMasAccidentesWF
             OcultarMenu();
         }
 
-        private void btnBuscarProfesional_Click(object sender, EventArgs e)
-        {
-            //Codigo del boton
-            GP.MetroTabGestionProfesional.SelectedTab = GP.tpActividadProf;
-            OcultarMenu();
-        }
+       
 
         private void btnGestionarUsuarios_Click(object sender, EventArgs e)
         {

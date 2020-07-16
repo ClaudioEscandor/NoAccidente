@@ -61,7 +61,7 @@ namespace NoMasAccidentesWF
             int tel;
             tel = 0;
 
-            Regex rgLetras = new Regex(@"^[a-zA-Z]{3,10}$");
+            Regex rgLetras = new Regex(@"^[a-zA-Z\s]{3,30}$");
             Regex rgTelefono = new Regex(@"^\d{1,2}\.\d{3}\.\d{3}[-][0-9kK]{1}$");
             Regex rgRutEmpresa = new Regex(@"^\d{1,2}\.\d{3}\.\d{3}[-][0-9kK]{1}$");
             Regex rgEmail = new Regex(@"^[^@]+@[^@]+\.[a-zA-Z]{2,}$");

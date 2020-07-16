@@ -39,6 +39,7 @@ namespace NoMasAccidentesWF
         {
             sc.agregarSolicitud(idSolicitud, idProfesional);
             MessageBox.Show("Solicitud agregada correctamente", "Correcto");
+            cargarSolicitud();
         }
 
         private void grdSolicitud_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -49,8 +49,15 @@ namespace NoMasAccidentesWF
 
         private void btnPDF_Click(object sender, EventArgs e)
         {
-            pdfC.crearPdf(idPago);
-            MessageBox.Show("Se creo el pdf en el escritorio","Correcto");
+            if (idPago > 0 )
+            {
+                pdfC.crearPdf(idPago);
+                MessageBox.Show("Se creo el pdf en el escritorio", "Correcto");
+            }else
+            {
+                MessageBox.Show("Debe seleccionar un pago", "Error");
+            }
+            
         }
 
         private void grListarDetaPago_CellContentClick(object sender, DataGridViewCellEventArgs e)

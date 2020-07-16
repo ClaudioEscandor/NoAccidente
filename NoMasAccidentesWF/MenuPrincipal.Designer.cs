@@ -54,7 +54,6 @@
             this.btnListarCliente = new MetroFramework.Controls.MetroButton();
             this.panelSubMenuProfesional = new MetroFramework.Controls.MetroPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.btnBuscarProfesional = new MetroFramework.Controls.MetroButton();
             this.btnListarProfesionales = new MetroFramework.Controls.MetroButton();
             this.btnAgregarProfesional = new MetroFramework.Controls.MetroButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -423,7 +422,6 @@
             // 
             this.panelSubMenuProfesional.BackColor = System.Drawing.Color.Transparent;
             this.panelSubMenuProfesional.Controls.Add(this.metroPanel1);
-            this.panelSubMenuProfesional.Controls.Add(this.btnBuscarProfesional);
             this.panelSubMenuProfesional.Controls.Add(this.btnListarProfesionales);
             this.panelSubMenuProfesional.Controls.Add(this.btnAgregarProfesional);
             this.panelSubMenuProfesional.ForeColor = System.Drawing.Color.Transparent;
@@ -433,7 +431,7 @@
             this.panelSubMenuProfesional.Location = new System.Drawing.Point(4, 50);
             this.panelSubMenuProfesional.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelSubMenuProfesional.Name = "panelSubMenuProfesional";
-            this.panelSubMenuProfesional.Size = new System.Drawing.Size(316, 162);
+            this.panelSubMenuProfesional.Size = new System.Drawing.Size(316, 154);
             this.panelSubMenuProfesional.TabIndex = 10;
             this.panelSubMenuProfesional.UseCustomBackColor = true;
             this.panelSubMenuProfesional.UseCustomForeColor = true;
@@ -454,20 +452,6 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 11;
-            // 
-            // btnBuscarProfesional
-            // 
-            this.btnBuscarProfesional.Location = new System.Drawing.Point(83, 107);
-            this.btnBuscarProfesional.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscarProfesional.Name = "btnBuscarProfesional";
-            this.btnBuscarProfesional.Size = new System.Drawing.Size(235, 55);
-            this.btnBuscarProfesional.Style = MetroFramework.MetroColorStyle.Black;
-            this.btnBuscarProfesional.TabIndex = 8;
-            this.btnBuscarProfesional.Text = "Listar Actividad Profesional";
-            this.btnBuscarProfesional.UseCustomBackColor = true;
-            this.btnBuscarProfesional.UseSelectable = true;
-            this.btnBuscarProfesional.UseStyleColors = true;
-            this.btnBuscarProfesional.Click += new System.EventHandler(this.btnBuscarProfesional_Click);
             // 
             // btnListarProfesionales
             // 
@@ -579,7 +563,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private MetroFramework.Controls.MetroPanel menuLateral;
         private MetroFramework.Controls.MetroPanel panelSubMenuProfesional;
-        private MetroFramework.Controls.MetroButton btnBuscarProfesional;
         private MetroFramework.Controls.MetroButton btnListarProfesionales;
         private MetroFramework.Controls.MetroButton btnAgregarProfesional;
         private MetroFramework.Controls.MetroPanel metroPanel1;

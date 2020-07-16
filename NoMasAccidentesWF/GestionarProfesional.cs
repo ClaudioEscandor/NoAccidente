@@ -33,6 +33,7 @@ namespace NoMasAccidentesWF
         public void cargarGrdEditProfesional()
         {
             grdEditarProfe.DataSource = proC.listarProfesionalEditar();
+            grdEditarProfe.ClearSelection();
         }
         private void lblUsuario_Click(object sender, EventArgs e)
         {
@@ -111,8 +112,16 @@ namespace NoMasAccidentesWF
         private void btnEliminarProfesional_Click(object sender, EventArgs e)
         {
             string email = txtEmailEditarP.Text;
-            proC.Eliminar_profesional(email);
-            MessageBox.Show(" Profesional Eliminado ", "Correcto");
+            int res = proC.Eliminar_profesional(email);
+            if (res == 1)
+            {
+                MessageBox.Show(" Profesional Eliminado ", "Correcto");
+            }
+            else
+            {
+                MessageBox.Show(" No se logro eliminar ", "Error");
+            }
+      
             cargarGrdEditProfesional();
             limpiar();
         }
