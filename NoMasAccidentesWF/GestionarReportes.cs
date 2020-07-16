@@ -21,11 +21,14 @@ namespace NoMasAccidentesWF
         ReporteControlador rc = new ReporteControlador();
         DetallePagoControlador dt = new DetallePagoControlador();
         AccidenteControlador ac = new AccidenteControlador();
+
+        PDFControlador pdfC = new PDFControlador();
     
         public GestionarReportes()
         {
             InitializeComponent();
             cargarCantAccidente();
+            pdfC.crearPdf();
         }
 
         private void GestionarReportes_Load(object sender, EventArgs e)

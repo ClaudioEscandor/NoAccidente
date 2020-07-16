@@ -112,6 +112,7 @@
     <Compile Include="Controlador\ClienteControlador.cs" />
     <Compile Include="Controlador\ContratoControlador.cs" />
     <Compile Include="Controlador\DetallePagoControlador.cs" />
+    <Compile Include="Controlador\PDFControlador.cs" />
     <Compile Include="Controlador\ReporteControlador.cs" />
     <Compile Include="Controlador\SolicitudControlador.cs" />
     <Compile Include="Controlador\LoginControlador.cs" />
