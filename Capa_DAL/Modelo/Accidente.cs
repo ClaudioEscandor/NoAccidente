@@ -8,10 +8,11 @@ namespace Capa_DAL.Modelo
 {
     public class Accidente
     {
-        public string rutCliente { get; set; }
-        public string nombreCliente { get; set; }
-        public string rutProfesional { get; set; }
-        public string nombreProfesional { get; set; }
+        
+        public int idCliente { get; set; }
+        public string nombreTitular { get; set; }
+        public string rutEmpresa { get; set; }
+        public string nombreEmpresa { get; set; }
         public int cantAccidente { get; set; }
 
     }

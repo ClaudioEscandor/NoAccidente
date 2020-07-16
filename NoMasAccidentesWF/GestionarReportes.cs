@@ -19,15 +19,28 @@ namespace NoMasAccidentesWF
         ErrorProvider error = new ErrorProvider();
 
         ReporteControlador rc = new ReporteControlador();
+        DetallePagoControlador dt = new DetallePagoControlador();
+        AccidenteControlador ac = new AccidenteControlador();
     
         public GestionarReportes()
         {
             InitializeComponent();
+            cargarCantAccidente();
         }
 
         private void GestionarReportes_Load(object sender, EventArgs e)
         {
+            //Prueba comentario
+            //Prueba comentario 2
+        }
 
+        private void btnListarPago_Click(object sender, EventArgs e)
+        {
+            grListarDetaPago.DataSource = dt.ListarPago();
+        }
+
+        public void cargarCantAccidente(){
+            grdAccidente.DataSource = ac.listarCantidadAccidente();
         }
     }
 }

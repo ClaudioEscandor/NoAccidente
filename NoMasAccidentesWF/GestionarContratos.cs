@@ -42,10 +42,10 @@ namespace NoMasAccidentesWF
                 int resp = contratoControlador.aceptarContrato(idContrato);
                 if (resp>0)
                 {
-                    MessageBox.Show("Contrato Aceptado");
+                    MessageBox.Show("Contrato Aceptado, Correcto");
                 }else
                 {
-                    MessageBox.Show("Fallo al Ingresar Contrato");
+                    MessageBox.Show("Fallo al Ingresar Contrato, ERROR");
                 }
             }
 

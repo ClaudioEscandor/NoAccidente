@@ -59,9 +59,11 @@
   <ItemGroup>
     <Compile Include="Conexion\CL_Conexion.cs" />
     <Compile Include="Conexion\CL_Operaciones.cs" />
+    <Compile Include="Controlador\AccidenteControlador.cs" />
     <Compile Include="Controlador\CapacitacionControlador.cs" />
     <Compile Include="Controlador\ClienteControlador.cs" />
     <Compile Include="Controlador\ContratoControlador.cs" />
+    <Compile Include="Controlador\DetallePagoControlador.cs" />
     <Compile Include="Controlador\ReporteControlador.cs" />
     <Compile Include="Controlador\SolicitudControlador.cs" />
     <Compile Include="Controlador\LoginControlador.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Modelo\Contrato.cs" />
     <Compile Include="Modelo\DetalleBoleta.cs" />
     <Compile Include="Modelo\ModificarCheckList.cs" />
+    <Compile Include="Modelo\Pagos.cs" />
     <Compile Include="Modelo\PlanContratado.cs" />
     <Compile Include="Modelo\Planificacion_Capacitacion.cs" />
     <Compile Include="Modelo\Profesional.cs" />

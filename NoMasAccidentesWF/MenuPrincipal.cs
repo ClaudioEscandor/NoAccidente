@@ -228,13 +228,15 @@ namespace NoMasAccidentesWF
             PanelDePestañas.Controls.Clear();
             PanelDePestañas.Controls.Add(rc);
             rc.Show();
+            rc.TcReportes.SelectedTab = rc.tpPago;
         }
 
-
+        
         private void metroButton3_Click(object sender, EventArgs e)
         {
             rc.TcReportes.SelectedTab = rc.tpAccidentes;
             OcultarMenu();
+            rc.cargarCantAccidente();
         }
     }
 }

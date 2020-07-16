@@ -67,5 +67,10 @@ namespace NoMasAccidentesWF
         {
 
         }
+
+        private void grdSolicitud_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

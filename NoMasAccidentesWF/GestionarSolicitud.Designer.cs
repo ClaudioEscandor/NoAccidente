@@ -221,6 +221,7 @@
             this.grdSolicitud.Size = new System.Drawing.Size(1116, 145);
             this.grdSolicitud.TabIndex = 37;
             this.grdSolicitud.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSolicitud_CellClick);
+            this.grdSolicitud.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSolicitud_CellContentClick);
             // 
             // metroLabel2
             // 
